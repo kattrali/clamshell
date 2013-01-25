@@ -23,6 +23,7 @@
     self.path = path;
     self.type = type;
     [self parseHTMLFileName];
+    [self parseImageFromType];
   }
   return self;
 }
@@ -41,6 +42,21 @@
 
     self.htmlFileName = [self.path substringWithRange:matchRange];
   }
+}
+
+- (void) parseImageFromType
+{
+  NSImage *image;
+  if ([self.type isEqualToString:@"clm"]) {
+    image = [NSImage imageNamed:@"script-attribute-m"];
+  } else if ([self.type isEqualToString:@"clconst"]) {
+    image = [NSImage imageNamed:@"script-block"];
+  } else if ([self.type isEqualToString:@"intf"]) {
+    image = [NSImage imageNamed:@"script-attribute-i"];
+  } else {
+    image = [NSImage imageNamed:@"script-attribute-c"];
+  }
+  self.icon = image;
 }
 
 @end

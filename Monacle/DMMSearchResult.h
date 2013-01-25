@@ -14,6 +14,7 @@
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSString *type;
 @property (nonatomic, strong) NSString *htmlFileName;
+@property (nonatomic, strong) NSImage *icon;
 
 - (id) initWithName: (NSString *) name path: (NSString *) path type: (NSString *) type;
 @end

@@ -21,6 +21,11 @@
 		8A76E2F516B1752900E5DBC4 /* DMMTokenStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A76E2F416B1752900E5DBC4 /* DMMTokenStore.m */; };
 		8A76E30C16B1E1A200E5DBC4 /* PXSourceList.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A76E30916B1E1A200E5DBC4 /* PXSourceList.m */; };
 		8A76E31016B2070100E5DBC4 /* DMMURLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A76E30F16B2070100E5DBC4 /* DMMURLParser.m */; };
+		8A9256B216B2FDBE00A85653 /* script-attribute-c.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A9256AE16B2FDBE00A85653 /* script-attribute-c.png */; };
+		8A9256B316B2FDBE00A85653 /* script-attribute-i.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A9256AF16B2FDBE00A85653 /* script-attribute-i.png */; };
+		8A9256B416B2FDBE00A85653 /* script-attribute-m.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A9256B016B2FDBE00A85653 /* script-attribute-m.png */; };
+		8A9256B516B2FDBE00A85653 /* script-block.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A9256B116B2FDBE00A85653 /* script-block.png */; };
+		8A9256B716B2FDCF00A85653 /* layers.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A9256B616B2FDCF00A85653 /* layers.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +61,11 @@
 		8A76E30B16B1E1A200E5DBC4 /* PXSourceListDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXSourceListDelegate.h; sourceTree = "<group>"; };
 		8A76E30E16B2070100E5DBC4 /* DMMURLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMMURLParser.h; sourceTree = "<group>"; };
 		8A76E30F16B2070100E5DBC4 /* DMMURLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMMURLParser.m; sourceTree = "<group>"; };
+		8A9256AE16B2FDBE00A85653 /* script-attribute-c.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "script-attribute-c.png"; sourceTree = "<group>"; };
+		8A9256AF16B2FDBE00A85653 /* script-attribute-i.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "script-attribute-i.png"; sourceTree = "<group>"; };
+		8A9256B016B2FDBE00A85653 /* script-attribute-m.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "script-attribute-m.png"; sourceTree = "<group>"; };
+		8A9256B116B2FDBE00A85653 /* script-block.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "script-block.png"; sourceTree = "<group>"; };
+		8A9256B616B2FDCF00A85653 /* layers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = layers.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,9 +125,10 @@
 		8A76E28916B0969900E5DBC4 /* ClamShell */ = {
 			isa = PBXGroup;
 			children = (
-				8A76E29816B0969900E5DBC4 /* MainMenu.xib */,
+				8A9256AD16B2FDB500A85653 /* Assets */,
 				8A9256A216B2CF9500A85653 /* Models */,
 				8A76E28A16B0969900E5DBC4 /* Supporting Files */,
+				8A76E29816B0969900E5DBC4 /* MainMenu.xib */,
 				8A76E29516B0969900E5DBC4 /* DMMAppDelegate.h */,
 				8A76E29616B0969900E5DBC4 /* DMMAppDelegate.m */,
 				8A76E2A516B0FD0B00E5DBC4 /* DMMWindowController.h */,
@@ -192,6 +203,18 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
+		8A9256AD16B2FDB500A85653 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				8A9256B616B2FDCF00A85653 /* layers.png */,
+				8A9256AE16B2FDBE00A85653 /* script-attribute-c.png */,
+				8A9256AF16B2FDBE00A85653 /* script-attribute-i.png */,
+				8A9256B016B2FDBE00A85653 /* script-attribute-m.png */,
+				8A9256B116B2FDBE00A85653 /* script-block.png */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -247,6 +270,11 @@
 				8A76E28E16B0969900E5DBC4 /* InfoPlist.strings in Resources */,
 				8A76E29416B0969900E5DBC4 /* Credits.rtf in Resources */,
 				8A76E29A16B0969900E5DBC4 /* MainMenu.xib in Resources */,
+				8A9256B216B2FDBE00A85653 /* script-attribute-c.png in Resources */,
+				8A9256B316B2FDBE00A85653 /* script-attribute-i.png in Resources */,
+				8A9256B416B2FDBE00A85653 /* script-attribute-m.png in Resources */,
+				8A9256B516B2FDBE00A85653 /* script-block.png in Resources */,
+				8A9256B716B2FDCF00A85653 /* layers.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
