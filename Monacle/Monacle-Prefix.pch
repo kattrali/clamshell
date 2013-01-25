@@ -1,0 +1,12 @@
+//
+// Prefix header for all source files of the 'Monacle' target in the 'Monacle' project
+//
+
+#ifdef __OBJC__
+  #import <Cocoa/Cocoa.h>
+  #import <WebKit/WebKit.h>
+  #import <AppKit/AppKit.h>
+  #import "DMMWindowController.h"
+  #import "DMMSearchResult.h"
+  #import "DMMTokenStore.h"
+#endif
