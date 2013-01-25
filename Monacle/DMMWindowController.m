@@ -10,6 +10,11 @@
 #import "DMMTokenStore.h"
 #import "DMMAppDelegate.h"
 
+@interface DMMWindowController()
+
+@property (nonatomic) int selectedIndex;
+@end
+
 @implementation DMMWindowController
 
 - (void) awakeFromNib
@@ -22,6 +27,7 @@
 {
   if ([DMMTokenStore hasDataStoreFile]) {
     self.searchResults = [DMMTokenStore tokensWithText:searchText];
+    self.selectedIndex = -1;
     if (loadIt && self.searchResults.count > 0) {
       [self loadURLForIndex:0];
     }
@@ -54,6 +60,9 @@
 
 - (void) tableViewSelectionDidChange:(NSNotification *)notification
 {
-  [self loadURLForIndex:self.tableView.selectedRow];
+  if (self.tableView.selectedRow != self.selectedIndex) {
+    self.selectedIndex = self.tableView.selectedRow;
+    [self loadURLForIndex:self.selectedIndex];
+  }
 }
 @end
