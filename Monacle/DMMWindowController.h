@@ -1,6 +1,6 @@
 //
 //  DMMWindowController.h
-//  Monacle
+//  ClamShell
 //
 //  Created by Delisa Mason on 1/24/13.
 //  Copyright (c) 2013 Delisa Mason. All rights reserved.
@@ -8,11 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-@interface DMMWindowController : NSObject <NSOutlineViewDataSource, NSOutlineViewDelegate, NSTextFieldDelegate>
+@interface DMMWindowController : NSWindowController <NSTableViewDelegate, NSTableViewDataSource, NSTextFieldDelegate>
 
-@property (nonatomic, weak) WebView *webView;
-@property (nonatomic, weak) NSOutlineView *outlineView;
-
-- (id) initWithWebview: (WebView *) webView outlineView: (NSOutlineView *) outlineView;
+@property (nonatomic, weak) IBOutlet WebView *webView;
+@property (nonatomic, weak) IBOutlet NSTableView *tableView;
+@property (weak) IBOutlet NSArrayController *arrayController;
+@property (nonatomic, strong) NSArray *searchResults;
 - (void) searchFor:(NSString *) searchText loadFirst: (BOOL) loadIt;
 @end

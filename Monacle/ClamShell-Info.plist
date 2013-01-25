@@ -33,7 +33,7 @@
 		<dict>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>monacle</string>
+				<string>clamshell</string>
 			</array>
 			<key>CFBundleURLName</key>
 			<string>app.identifier</string>

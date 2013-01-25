@@ -1,6 +1,6 @@
 //
 //  DMMSearchResult.m
-//  Monacle
+//  ClamShell
 //
 //  Created by Delisa Mason on 1/24/13.
 //  Copyright (c) 2013 Delisa Mason. All rights reserved.
@@ -10,7 +10,6 @@
 @interface DMMSearchResult ()
 
 @property (nonatomic, strong) NSString *delimiter;
-@property (nonatomic, strong) NSString *htmlFileName;
 
 @end
 
@@ -23,7 +22,6 @@
     self.name = name;
     self.path = path;
     self.type = type;
-    [self parseDelimiter];
     [self parseHTMLFileName];
   }
   return self;
@@ -45,27 +43,4 @@
   }
 }
 
-- (void) parseDelimiter
-{
-  if ([self.path rangeOfString:@"class_method"].location != NSNotFound) {
-    self.delimiter = @"+";
-  } else if ([self.path rangeOfString:@"instance_method"].location != NSNotFound) {
-    self.delimiter = @"-";
-  } else if ([self.type isEqualToString:@"clconst"]) {
-    self.delimiter = @"::";
-  }
-}
-
-- (NSString *) displayText
-{
-  return [NSString stringWithFormat:@"%@ (%@)", self.name, self.htmlFileName];
-}
-
-- (NSString *) signature
-{
-  if ([self.type isEqualToString:@"clm"] ||[self.type isEqualToString:@"clconst"]) {
-    return [NSString stringWithFormat:@"%@%@%@", self.htmlFileName, self.delimiter, self.name];
-  }
-  return self.name;
-}
 @end

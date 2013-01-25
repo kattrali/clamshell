@@ -13,12 +13,10 @@
 		8A76E29416B0969900E5DBC4 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 8A76E29216B0969900E5DBC4 /* Credits.rtf */; };
 		8A76E29716B0969900E5DBC4 /* DMMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A76E29616B0969900E5DBC4 /* DMMAppDelegate.m */; };
 		8A76E29A16B0969900E5DBC4 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A76E29816B0969900E5DBC4 /* MainMenu.xib */; };
-		8A76E29D16B0969900E5DBC4 /* Monacle.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8A76E29B16B0969900E5DBC4 /* Monacle.xcdatamodeld */; };
 		8A76E2A416B09B9000E5DBC4 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A76E2A316B09B9000E5DBC4 /* WebKit.framework */; };
 		8A76E2A716B0FD0B00E5DBC4 /* DMMWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A76E2A616B0FD0B00E5DBC4 /* DMMWindowController.m */; };
 		8A76E2BA16B1075300E5DBC4 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A76E2B916B1075300E5DBC4 /* libsqlite3.0.dylib */; };
 		8A76E2EB16B108A500E5DBC4 /* libFMDB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A76E2EA16B108A500E5DBC4 /* libFMDB.a */; };
-		8A76E2EF16B1175000E5DBC4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A76E2EE16B1175000E5DBC4 /* QuartzCore.framework */; };
 		8A76E2F216B173E700E5DBC4 /* DMMSearchResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A76E2F116B173E700E5DBC4 /* DMMSearchResult.m */; };
 		8A76E2F516B1752900E5DBC4 /* DMMTokenStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A76E2F416B1752900E5DBC4 /* DMMTokenStore.m */; };
 		8A76E30C16B1E1A200E5DBC4 /* PXSourceList.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A76E30916B1E1A200E5DBC4 /* PXSourceList.m */; };
@@ -26,26 +24,23 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8A76E27F16B0969900E5DBC4 /* Monacle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Monacle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A76E27F16B0969900E5DBC4 /* ClamShell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClamShell.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A76E28316B0969900E5DBC4 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		8A76E28616B0969900E5DBC4 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
-		8A76E28716B0969900E5DBC4 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		8A76E28816B0969900E5DBC4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		8A76E28B16B0969900E5DBC4 /* Monacle-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Monacle-Info.plist"; sourceTree = "<group>"; };
+		8A76E28B16B0969900E5DBC4 /* ClamShell-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ClamShell-Info.plist"; sourceTree = "<group>"; };
 		8A76E28D16B0969900E5DBC4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8A76E28F16B0969900E5DBC4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		8A76E29116B0969900E5DBC4 /* Monacle-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Monacle-Prefix.pch"; sourceTree = "<group>"; };
+		8A76E29116B0969900E5DBC4 /* ClamShell-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ClamShell-Prefix.pch"; sourceTree = "<group>"; };
 		8A76E29316B0969900E5DBC4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		8A76E29516B0969900E5DBC4 /* DMMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMMAppDelegate.h; sourceTree = "<group>"; };
 		8A76E29616B0969900E5DBC4 /* DMMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMMAppDelegate.m; sourceTree = "<group>"; };
 		8A76E29916B0969900E5DBC4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		8A76E29C16B0969900E5DBC4 /* Monacle.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Monacle.xcdatamodel; sourceTree = "<group>"; };
 		8A76E2A316B09B9000E5DBC4 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		8A76E2A516B0FD0B00E5DBC4 /* DMMWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMMWindowController.h; sourceTree = "<group>"; };
 		8A76E2A616B0FD0B00E5DBC4 /* DMMWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMMWindowController.m; sourceTree = "<group>"; };
 		8A76E2B916B1075300E5DBC4 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		8A76E2EA16B108A500E5DBC4 /* libFMDB.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFMDB.a; sourceTree = "<group>"; };
-		8A76E2EE16B1175000E5DBC4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		8A76E2F016B173E700E5DBC4 /* DMMSearchResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMMSearchResult.h; sourceTree = "<group>"; };
 		8A76E2F116B173E700E5DBC4 /* DMMSearchResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMMSearchResult.m; sourceTree = "<group>"; };
 		8A76E2F316B1752900E5DBC4 /* DMMTokenStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMMTokenStore.h; sourceTree = "<group>"; };
@@ -68,7 +63,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A76E2EF16B1175000E5DBC4 /* QuartzCore.framework in Frameworks */,
 				8A76E2BA16B1075300E5DBC4 /* libsqlite3.0.dylib in Frameworks */,
 				8A76E2A416B09B9000E5DBC4 /* WebKit.framework in Frameworks */,
 				8A76E28416B0969900E5DBC4 /* Cocoa.framework in Frameworks */,
@@ -82,17 +76,17 @@
 		8A76E27416B0969900E5DBC4 = {
 			isa = PBXGroup;
 			children = (
-				8A76E2A816B1073000E5DBC4 /* Vendor */,
-				8A76E28916B0969900E5DBC4 /* Monacle */,
+				8A76E28916B0969900E5DBC4 /* ClamShell */,
 				8A76E28216B0969900E5DBC4 /* Frameworks */,
 				8A76E28016B0969900E5DBC4 /* Products */,
+				8A76E2A816B1073000E5DBC4 /* Vendor */,
 			);
 			sourceTree = "<group>";
 		};
 		8A76E28016B0969900E5DBC4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8A76E27F16B0969900E5DBC4 /* Monacle.app */,
+				8A76E27F16B0969900E5DBC4 /* ClamShell.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,7 +96,6 @@
 			children = (
 				8A76E2EA16B108A500E5DBC4 /* libFMDB.a */,
 				8A76E2B916B1075300E5DBC4 /* libsqlite3.0.dylib */,
-				8A76E2EE16B1175000E5DBC4 /* QuartzCore.framework */,
 				8A76E2A316B09B9000E5DBC4 /* WebKit.framework */,
 				8A76E28316B0969900E5DBC4 /* Cocoa.framework */,
 				8A76E28516B0969900E5DBC4 /* Other Frameworks */,
@@ -114,37 +107,33 @@
 			isa = PBXGroup;
 			children = (
 				8A76E28616B0969900E5DBC4 /* AppKit.framework */,
-				8A76E28716B0969900E5DBC4 /* CoreData.framework */,
 				8A76E28816B0969900E5DBC4 /* Foundation.framework */,
 			);
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
-		8A76E28916B0969900E5DBC4 /* Monacle */ = {
+		8A76E28916B0969900E5DBC4 /* ClamShell */ = {
 			isa = PBXGroup;
 			children = (
+				8A76E29816B0969900E5DBC4 /* MainMenu.xib */,
+				8A9256A216B2CF9500A85653 /* Models */,
+				8A76E28A16B0969900E5DBC4 /* Supporting Files */,
 				8A76E29516B0969900E5DBC4 /* DMMAppDelegate.h */,
 				8A76E29616B0969900E5DBC4 /* DMMAppDelegate.m */,
-				8A76E29816B0969900E5DBC4 /* MainMenu.xib */,
-				8A76E29B16B0969900E5DBC4 /* Monacle.xcdatamodeld */,
-				8A76E28A16B0969900E5DBC4 /* Supporting Files */,
 				8A76E2A516B0FD0B00E5DBC4 /* DMMWindowController.h */,
 				8A76E2A616B0FD0B00E5DBC4 /* DMMWindowController.m */,
-				8A76E2F016B173E700E5DBC4 /* DMMSearchResult.h */,
-				8A76E2F116B173E700E5DBC4 /* DMMSearchResult.m */,
-				8A76E2F316B1752900E5DBC4 /* DMMTokenStore.h */,
-				8A76E2F416B1752900E5DBC4 /* DMMTokenStore.m */,
 			);
+			name = ClamShell;
 			path = Monacle;
 			sourceTree = "<group>";
 		};
 		8A76E28A16B0969900E5DBC4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				8A76E28B16B0969900E5DBC4 /* Monacle-Info.plist */,
+				8A76E28B16B0969900E5DBC4 /* ClamShell-Info.plist */,
 				8A76E28C16B0969900E5DBC4 /* InfoPlist.strings */,
 				8A76E28F16B0969900E5DBC4 /* main.m */,
-				8A76E29116B0969900E5DBC4 /* Monacle-Prefix.pch */,
+				8A76E29116B0969900E5DBC4 /* ClamShell-Prefix.pch */,
 				8A76E29216B0969900E5DBC4 /* Credits.rtf */,
 			);
 			name = "Supporting Files";
@@ -192,12 +181,23 @@
 			name = DMMURLParser;
 			sourceTree = "<group>";
 		};
+		8A9256A216B2CF9500A85653 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8A76E2F016B173E700E5DBC4 /* DMMSearchResult.h */,
+				8A76E2F116B173E700E5DBC4 /* DMMSearchResult.m */,
+				8A76E2F316B1752900E5DBC4 /* DMMTokenStore.h */,
+				8A76E2F416B1752900E5DBC4 /* DMMTokenStore.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8A76E27E16B0969900E5DBC4 /* Monacle */ = {
+		8A76E27E16B0969900E5DBC4 /* ClamShell */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8A76E2A016B0969900E5DBC4 /* Build configuration list for PBXNativeTarget "Monacle" */;
+			buildConfigurationList = 8A76E2A016B0969900E5DBC4 /* Build configuration list for PBXNativeTarget "ClamShell" */;
 			buildPhases = (
 				8A76E27B16B0969900E5DBC4 /* Sources */,
 				8A76E27C16B0969900E5DBC4 /* Frameworks */,
@@ -207,9 +207,9 @@
 			);
 			dependencies = (
 			);
-			name = Monacle;
+			name = ClamShell;
 			productName = Monacle;
-			productReference = 8A76E27F16B0969900E5DBC4 /* Monacle.app */;
+			productReference = 8A76E27F16B0969900E5DBC4 /* ClamShell.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -222,7 +222,7 @@
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "Delisa Mason";
 			};
-			buildConfigurationList = 8A76E27916B0969900E5DBC4 /* Build configuration list for PBXProject "Monacle" */;
+			buildConfigurationList = 8A76E27916B0969900E5DBC4 /* Build configuration list for PBXProject "ClamShell" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -234,7 +234,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8A76E27E16B0969900E5DBC4 /* Monacle */,
+				8A76E27E16B0969900E5DBC4 /* ClamShell */,
 			);
 		};
 /* End PBXProject section */
@@ -259,7 +259,6 @@
 			files = (
 				8A76E29016B0969900E5DBC4 /* main.m in Sources */,
 				8A76E29716B0969900E5DBC4 /* DMMAppDelegate.m in Sources */,
-				8A76E29D16B0969900E5DBC4 /* Monacle.xcdatamodeld in Sources */,
 				8A76E2A716B0FD0B00E5DBC4 /* DMMWindowController.m in Sources */,
 				8A76E2F216B173E700E5DBC4 /* DMMSearchResult.m in Sources */,
 				8A76E2F516B1752900E5DBC4 /* DMMTokenStore.m in Sources */,
@@ -356,13 +355,13 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Monacle/Monacle-Prefix.pch";
-				INFOPLIST_FILE = "Monacle/Monacle-Info.plist";
+				GCC_PREFIX_HEADER = "Monacle/ClamShell-Prefix.pch";
+				INFOPLIST_FILE = "Monacle/ClamShell-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ClamShell;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -372,13 +371,13 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Monacle/Monacle-Prefix.pch";
-				INFOPLIST_FILE = "Monacle/Monacle-Info.plist";
+				GCC_PREFIX_HEADER = "Monacle/ClamShell-Prefix.pch";
+				INFOPLIST_FILE = "Monacle/ClamShell-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ClamShell;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -386,7 +385,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8A76E27916B0969900E5DBC4 /* Build configuration list for PBXProject "Monacle" */ = {
+		8A76E27916B0969900E5DBC4 /* Build configuration list for PBXProject "ClamShell" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8A76E29E16B0969900E5DBC4 /* Debug */,
@@ -395,28 +394,16 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8A76E2A016B0969900E5DBC4 /* Build configuration list for PBXNativeTarget "Monacle" */ = {
+		8A76E2A016B0969900E5DBC4 /* Build configuration list for PBXNativeTarget "ClamShell" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8A76E2A116B0969900E5DBC4 /* Debug */,
 				8A76E2A216B0969900E5DBC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		8A76E29B16B0969900E5DBC4 /* Monacle.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				8A76E29C16B0969900E5DBC4 /* Monacle.xcdatamodel */,
-			);
-			currentVersion = 8A76E29C16B0969900E5DBC4 /* Monacle.xcdatamodel */;
-			path = Monacle.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 8A76E27616B0969900E5DBC4 /* Project object */;
 }

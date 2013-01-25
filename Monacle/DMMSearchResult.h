@@ -1,6 +1,6 @@
 //
 //  DMMSearchResult.h
-//  Monacle
+//  ClamShell
 //
 //  Created by Delisa Mason on 1/24/13.
 //  Copyright (c) 2013 Delisa Mason. All rights reserved.
@@ -13,8 +13,7 @@
 @property (nonatomic, strong) NSString *path;
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSString *type;
+@property (nonatomic, strong) NSString *htmlFileName;
 
 - (id) initWithName: (NSString *) name path: (NSString *) path type: (NSString *) type;
-- (NSString *) displayText;
-- (NSString *) signature;
 @end

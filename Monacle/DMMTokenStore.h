@@ -1,6 +1,6 @@
 //
 //  DMMTokenStore.h
-//  Monacle
+//  ClamShell
 //
 //  Created by Delisa Mason on 1/24/13.
 //  Copyright (c) 2013 Delisa Mason. All rights reserved.
@@ -12,4 +12,5 @@
 
 + (NSArray *) tokensWithText:(NSString *) text;
 + (BOOL) hasDataStoreFile;
++ (NSString *) databasePath;
 @end

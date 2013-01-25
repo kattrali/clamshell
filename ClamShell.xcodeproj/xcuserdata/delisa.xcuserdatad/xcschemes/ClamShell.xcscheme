@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8A76E27E16B0969900E5DBC4"
                BuildableName = "Monacle.app"
-               BlueprintName = "Monacle"
-               ReferencedContainer = "container:Monacle.xcodeproj">
+               BlueprintName = "ClamShell"
+               ReferencedContainer = "container:ClamShell.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,8 +34,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8A76E27E16B0969900E5DBC4"
             BuildableName = "Monacle.app"
-            BlueprintName = "Monacle"
-            ReferencedContainer = "container:Monacle.xcodeproj">
+            BlueprintName = "ClamShell"
+            ReferencedContainer = "container:ClamShell.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -53,8 +53,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8A76E27E16B0969900E5DBC4"
             BuildableName = "Monacle.app"
-            BlueprintName = "Monacle"
-            ReferencedContainer = "container:Monacle.xcodeproj">
+            BlueprintName = "ClamShell"
+            ReferencedContainer = "container:ClamShell.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -71,8 +71,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8A76E27E16B0969900E5DBC4"
             BuildableName = "Monacle.app"
-            BlueprintName = "Monacle"
-            ReferencedContainer = "container:Monacle.xcodeproj">
+            BlueprintName = "ClamShell"
+            ReferencedContainer = "container:ClamShell.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

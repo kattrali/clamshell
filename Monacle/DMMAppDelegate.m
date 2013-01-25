@@ -1,6 +1,6 @@
 //
 //  DMMAppDelegate.m
-//  Monacle
+//  ClamShell
 //
 //  Created by Delisa Mason on 1/23/13.
 //  Copyright (c) 2013 Delisa Mason. All rights reserved.
@@ -12,16 +12,16 @@
 
 #define DOCSET_DIR @"DocSet"
 
-@implementation DMMAppDelegate
+@interface DMMAppDelegate()
 
-@synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
-@synthesize managedObjectModel = _managedObjectModel;
-@synthesize managedObjectContext = _managedObjectContext;
+- (void)handleGetURLEvent:(NSAppleEventDescriptor *)event withReplyEvent:(NSAppleEventDescriptor *)replyEvent;
+
+@end
+
+@implementation DMMAppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-  self.mainController = [[DMMWindowController alloc] initWithWebview:self.webView outlineView:self.outlineView];
-  self.searchField.delegate = self.mainController;
   [[NSAppleEventManager sharedAppleEventManager] setEventHandler:self
 andSelector:@selector(handleGetURLEvent:withReplyEvent:) forEventClass:kInternetEventClass andEventID:kAEGetURL];
 }
@@ -59,16 +59,22 @@ andSelector:@selector(handleGetURLEvent:withReplyEvent:) forEventClass:kInternet
   return [[self applicationFilesDirectory] URLByAppendingPathComponent:DOCSET_DIR];
 }
 
-// Returns the directory the application uses to store the Core Data store file. This code uses a directory named "Monacle" in the user's Application Support directory.
+// Returns the directory the application uses to store the Core Data store file. This code uses a directory named "ClamShell" in the user's Application Support directory.
 - (NSURL *)applicationFilesDirectory
 {
-    NSFileManager *fileManager = [NSFileManager defaultManager];
-    NSURL *appSupportURL = [[fileManager URLsForDirectory:NSApplicationSupportDirectory inDomains:NSUserDomainMask] lastObject];
-    return [appSupportURL URLByAppendingPathComponent:@"Monacle"];
+    NSFileManager *manager = [NSFileManager defaultManager];
+    NSURL *appSupportURL = [[manager URLsForDirectory:NSApplicationSupportDirectory inDomains:NSUserDomainMask] lastObject];
+    
+    NSURL *dir = [appSupportURL URLByAppendingPathComponent:@"ClamShell"];
+    if(![manager fileExistsAtPath:[dir path]]) {
+      [manager createDirectoryAtPath:[dir path] withIntermediateDirectories:YES attributes:nil error:nil];
+    }
+    return dir;
 }
 
 - (void)handleGetURLEvent:(NSAppleEventDescriptor *)event withReplyEvent:(NSAppleEventDescriptor *)replyEvent
 {
+  if (![self.window isVisible]) [self.window makeKeyAndOrderFront:self];
   NSString* urlPath = [[event paramDescriptorForKeyword:keyDirectObject] stringValue];
   DMMURLParser *parser = [[DMMURLParser alloc] initWithURLString:urlPath];
   NSString *searchText = [parser valueForVariable:@"searchText"];

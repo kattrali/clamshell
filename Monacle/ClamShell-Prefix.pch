@@ -1,5 +1,5 @@
 //
-// Prefix header for all source files of the 'Monacle' target in the 'Monacle' project
+// Prefix header for all source files of the 'ClamShell' target in the 'ClamShell' project
 //
 
 #ifdef __OBJC__

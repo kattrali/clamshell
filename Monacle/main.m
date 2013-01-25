@@ -1,6 +1,6 @@
 //
 //  main.m
-//  Monacle
+//  ClamShell
 //
 //  Created by Delisa Mason on 1/23/13.
 //  Copyright (c) 2013 Delisa Mason. All rights reserved.
