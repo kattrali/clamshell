@@ -40,7 +40,10 @@
     NSTextCheckingResult *match = matches[0];
     NSRange matchRange = [match rangeAtIndex:1];
 
-    self.htmlFileName = [self.path substringWithRange:matchRange];
+    NSString *fileName = [self.path substringWithRange:matchRange];
+    if (![fileName isEqualToString:self.name]) {
+      self.htmlFileName = fileName;
+    }
   }
 }
 

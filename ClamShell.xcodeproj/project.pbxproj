@@ -26,6 +26,7 @@
 		8A9256B416B2FDBE00A85653 /* script-attribute-m.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A9256B016B2FDBE00A85653 /* script-attribute-m.png */; };
 		8A9256B516B2FDBE00A85653 /* script-block.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A9256B116B2FDBE00A85653 /* script-block.png */; };
 		8A9256B716B2FDCF00A85653 /* layers.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A9256B616B2FDCF00A85653 /* layers.png */; };
+		8A9256B916B31A0000A85653 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 8A9256B816B31A0000A85653 /* LICENSE */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,7 @@
 		8A9256B016B2FDBE00A85653 /* script-attribute-m.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "script-attribute-m.png"; sourceTree = "<group>"; };
 		8A9256B116B2FDBE00A85653 /* script-block.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "script-block.png"; sourceTree = "<group>"; };
 		8A9256B616B2FDCF00A85653 /* layers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = layers.png; sourceTree = "<group>"; };
+		8A9256B816B31A0000A85653 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = Monacle/LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 				8A76E28216B0969900E5DBC4 /* Frameworks */,
 				8A76E28016B0969900E5DBC4 /* Products */,
 				8A76E2A816B1073000E5DBC4 /* Vendor */,
+				8A9256B816B31A0000A85653 /* LICENSE */,
 			);
 			sourceTree = "<group>";
 		};
@@ -275,6 +278,7 @@
 				8A9256B416B2FDBE00A85653 /* script-attribute-m.png in Resources */,
 				8A9256B516B2FDBE00A85653 /* script-block.png in Resources */,
 				8A9256B716B2FDCF00A85653 /* layers.png in Resources */,
+				8A9256B916B31A0000A85653 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
