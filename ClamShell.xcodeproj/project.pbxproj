@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A01C77516B38FE20093AE41 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 8A01C77416B38FE20093AE41 /* README.md */; };
+		8A01C77916B39A110093AE41 /* ClamShell Popover.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A01C77716B39A110093AE41 /* ClamShell Popover.png */; };
+		8A01C77A16B39A110093AE41 /* ClamShell.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A01C77816B39A110093AE41 /* ClamShell.png */; };
 		8A76E28416B0969900E5DBC4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A76E28316B0969900E5DBC4 /* Cocoa.framework */; };
 		8A76E28E16B0969900E5DBC4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8A76E28C16B0969900E5DBC4 /* InfoPlist.strings */; };
 		8A76E29016B0969900E5DBC4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A76E28F16B0969900E5DBC4 /* main.m */; };
@@ -30,6 +33,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8A01C77416B38FE20093AE41 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		8A01C77716B39A110093AE41 /* ClamShell Popover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ClamShell Popover.png"; sourceTree = "<group>"; };
+		8A01C77816B39A110093AE41 /* ClamShell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ClamShell.png; sourceTree = "<group>"; };
 		8A76E27F16B0969900E5DBC4 /* ClamShell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClamShell.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A76E28316B0969900E5DBC4 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		8A76E28616B0969900E5DBC4 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -83,6 +89,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8A01C77616B397A70093AE41 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				8A01C77716B39A110093AE41 /* ClamShell Popover.png */,
+				8A01C77816B39A110093AE41 /* ClamShell.png */,
+				8A9256B816B31A0000A85653 /* LICENSE */,
+				8A01C77416B38FE20093AE41 /* README.md */,
+			);
+			name = Documentation;
+			sourceTree = "<group>";
+		};
 		8A76E27416B0969900E5DBC4 = {
 			isa = PBXGroup;
 			children = (
@@ -90,7 +107,7 @@
 				8A76E28216B0969900E5DBC4 /* Frameworks */,
 				8A76E28016B0969900E5DBC4 /* Products */,
 				8A76E2A816B1073000E5DBC4 /* Vendor */,
-				8A9256B816B31A0000A85653 /* LICENSE */,
+				8A01C77616B397A70093AE41 /* Documentation */,
 			);
 			sourceTree = "<group>";
 		};
@@ -276,6 +293,9 @@
 				8A9256B516B2FDBE00A85653 /* script-block.png in Resources */,
 				8A9256B716B2FDCF00A85653 /* layers.png in Resources */,
 				8A9256B916B31A0000A85653 /* LICENSE in Resources */,
+				8A01C77516B38FE20093AE41 /* README.md in Resources */,
+				8A01C77916B39A110093AE41 /* ClamShell Popover.png in Resources */,
+				8A01C77A16B39A110093AE41 /* ClamShell.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

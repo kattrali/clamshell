@@ -43,11 +43,7 @@
 
     [self.popover showRelativeToRect:NSRectFromCGRect(CGRectMake(0, 0, 10, anchorView.frame.size.height)) ofView:anchorView preferredEdge:NSMaxYEdge];
 
-    if (self.searchResults.count > 0) {
-      [self loadURLForIndex:0 intoView:self.popover.webView];
-    } else {
-      [[self.popover.webView mainFrame] loadHTMLString:@"<big><em>No Results Found</em></big>" baseURL:nil];
-    }
+    [self loadURLForIndex:0 intoView:self.popover.webView];
   } else {
     [self showDocSetMissingAlert];
   }
@@ -59,6 +55,8 @@
     DMMSearchResult *item = (DMMSearchResult *)self.searchResults[index];
     NSURLRequest *req = [NSURLRequest requestWithURL:item.path];
     [[view mainFrame] loadRequest:req];
+  } else {
+    [[view mainFrame] loadHTMLString:@"<big><em>No Results Found</em></big>" baseURL:nil];
   }
 }
 
