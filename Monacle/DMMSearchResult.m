@@ -7,6 +7,8 @@
 //
 
 #import "DMMSearchResult.h"
+#import "DMMAppDelegate.h"
+
 @interface DMMSearchResult ()
 
 @property (nonatomic, strong) NSString *delimiter;
@@ -20,8 +22,12 @@
   self = [super init];
   if (self) {
     self.name = name;
-    self.path = path;
     self.type = type;
+
+    NSURL *root = [((DMMAppDelegate *)[[NSApplication sharedApplication] delegate]) docSetDirectory];
+    NSString *itemPath = [NSString stringWithFormat:@"Contents/Resources/Documents/%@", path];
+    self.path = [NSURL URLWithString:itemPath relativeToURL:root];
+
     [self parseHTMLFileName];
     [self parseImageFromType];
   }
@@ -32,15 +38,16 @@
 {
   NSRegularExpression *exp = [NSRegularExpression regularExpressionWithPattern:@"\\/([A-Za-z0-9]+)\\.html" options:NSRegularExpressionDotMatchesLineSeparators error:nil];
 
-  NSArray *matches = [exp matchesInString:self.path
+  NSString *pathString = [self.path absoluteString];
+  NSArray *matches = [exp matchesInString:pathString
                                   options:0
-                                    range:NSMakeRange(0, [self.path length])];
+                                    range:NSMakeRange(0, pathString.length)];
 
   if (matches.count > 0) {
     NSTextCheckingResult *match = matches[0];
     NSRange matchRange = [match rangeAtIndex:1];
 
-    NSString *fileName = [self.path substringWithRange:matchRange];
+    NSString *fileName = [pathString substringWithRange:matchRange];
     if (![fileName isEqualToString:self.name]) {
       self.htmlFileName = fileName;
     }

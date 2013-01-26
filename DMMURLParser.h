@@ -10,9 +10,9 @@
 
 @interface DMMURLParser : NSObject
 
-@property (nonatomic, retain) NSArray *variables;
+@property (nonatomic, retain) NSDictionary *variables;
 
-- (id)initWithURLString:(NSString *)url;
-- (NSString *)valueForVariable:(NSString *)varName;
+- (id)initWithURL:(NSURL *) url;
+- (NSString *)valueForVariable:(NSString *) varName;
 
 @end

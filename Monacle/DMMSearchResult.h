@@ -10,7 +10,7 @@
 
 @interface DMMSearchResult : NSObject
 
-@property (nonatomic, strong) NSString *path;
+@property (nonatomic, strong) NSURL *path;
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSString *type;
 @property (nonatomic, strong) NSString *htmlFileName;

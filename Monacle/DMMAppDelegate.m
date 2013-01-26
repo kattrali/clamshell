@@ -20,10 +20,12 @@
 
 @implementation DMMAppDelegate
 
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification
+-(void)applicationWillFinishLaunching:(NSNotification *)aNotification
 {
-  [[NSAppleEventManager sharedAppleEventManager] setEventHandler:self
-andSelector:@selector(handleGetURLEvent:withReplyEvent:) forEventClass:kInternetEventClass andEventID:kAEGetURL];
+  NSAppleEventManager *appleEventManager = [NSAppleEventManager sharedAppleEventManager];
+  [appleEventManager setEventHandler:self
+                         andSelector:@selector(handleGetURLEvent:withReplyEvent:)
+                       forEventClass:kInternetEventClass andEventID:kAEGetURL];
 }
 
 - (IBAction)openDocument:(id)sender
@@ -72,13 +74,36 @@ andSelector:@selector(handleGetURLEvent:withReplyEvent:) forEventClass:kInternet
     return dir;
 }
 
-- (void)handleGetURLEvent:(NSAppleEventDescriptor *)event withReplyEvent:(NSAppleEventDescriptor *)replyEvent
+- (BOOL)applicationShouldHandleReopen:(NSApplication *)theApplication
+                    hasVisibleWindows:(BOOL)flag
 {
-  if (![self.window isVisible]) [self.window makeKeyAndOrderFront:self];
-  NSString* urlPath = [[event paramDescriptorForKeyword:keyDirectObject] stringValue];
-  DMMURLParser *parser = [[DMMURLParser alloc] initWithURLString:urlPath];
-  NSString *searchText = [parser valueForVariable:@"searchText"];
-  [self.mainController searchFor:searchText loadFirst:YES];
+  if (!flag) {
+    [self.window orderFront:self];
+  }
+  return YES;
 }
 
+- (void)handleGetURLEvent:(NSAppleEventDescriptor *)event withReplyEvent:(NSAppleEventDescriptor *)replyEvent
+{
+  NSURL *url = [NSURL URLWithString:[[event paramDescriptorForKeyword:keyDirectObject] stringValue]];
+  DMMURLParser *parser = [[DMMURLParser alloc] initWithURL:url];
+  NSString *searchText = [parser valueForVariable:@"searchText"];
+  NSString *xValue = [parser valueForVariable:@"x"];
+  NSString *yValue = [parser valueForVariable:@"y"];
+  if (xValue && yValue) {
+    if ([self.window isVisible]) [self.window orderOut:self];
+    NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
+    CGFloat x = [[formatter numberFromString:xValue] floatValue];
+    CGFloat y = [[formatter numberFromString:yValue] floatValue];
+    [self.mainController displayFirstResultFor:searchText atPoint:CGPointMake(x, y)];
+  } else {
+    if (![self.window isVisible]) [self.window orderFront:self];
+    [self.mainController searchFor:searchText loadFirst:YES];
+  }
+}
+
+- (IBAction)closePopoverHandler:(id)sender {
+  [self.popover close];
+  [[NSApplication sharedApplication] hide:self];
+}
 @end

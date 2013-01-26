@@ -16,6 +16,8 @@
 @property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
 @property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 
+- (IBAction)closePopoverHandler:(id)sender;
+@property (weak) IBOutlet DMMPopover *popover;
 - (NSURL *) docSetDirectory;
 - (NSURL *) applicationFilesDirectory;
 @end

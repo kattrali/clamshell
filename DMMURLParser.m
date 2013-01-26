@@ -10,30 +10,35 @@
 
 @implementation DMMURLParser
 
-- (id) initWithURLString:(NSString *)url{
+- (id) initWithURL:(NSURL *) url
+{
   self = [super init];
   if (self != nil) {
-    NSString *string = url;
-    NSScanner *scanner = [NSScanner scannerWithString:string];
-    [scanner setCharactersToBeSkipped:[NSCharacterSet characterSetWithCharactersInString:@"/&?"]];
-    NSString *tempString;
-    NSMutableArray *vars = [NSMutableArray new];
-    [scanner scanUpToString:@"//" intoString:nil];       //ignore the beginning of the string and skip to the vars
-    while ([scanner scanUpToString:@"&" intoString:&tempString]) {
-      [vars addObject:[tempString copy]];
+    NSArray *components = [[url absoluteString] componentsSeparatedByString:@"//"];
+    if (components.count < 2) {
+      self.variables = @{};
+    } else {
+      NSString *query = components[1];
+      NSArray *queryPairs = [query componentsSeparatedByString:@"&"];
+      NSMutableDictionary *pairs = [NSMutableDictionary dictionary];
+      for (NSString *queryPair in queryPairs) {
+        NSArray *bits = [queryPair componentsSeparatedByString:@"="];
+        if ([bits count] != 2) { continue; }
+
+        NSString *key = [[bits objectAtIndex:0] stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+        NSString *value = [[bits objectAtIndex:1] stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+
+        [pairs setObject:value forKey:key];
+        self.variables = pairs;
+      }
     }
-    self.variables = vars;  }
+  }
   return self;
 }
 
-- (NSString *)valueForVariable:(NSString *)varName {
-  for (NSString *var in self.variables) {
-    if ([var length] > [varName length]+1 && [[var substringWithRange:NSMakeRange(0, [varName length]+1)] isEqualToString:[varName stringByAppendingString:@"="]]) {
-      NSString *varValue = [var substringFromIndex:[varName length]+1];
-      return varValue;
-    }
-  }
-  return nil;
+- (NSString *)valueForVariable:(NSString *)varName
+{
+  return self.variables[varName];
 }
 
 @end

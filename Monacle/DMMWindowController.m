@@ -10,11 +10,6 @@
 #import "DMMTokenStore.h"
 #import "DMMAppDelegate.h"
 
-@interface DMMWindowController()
-
-@property (nonatomic) int selectedIndex;
-@end
-
 @implementation DMMWindowController
 
 - (void) awakeFromNib
@@ -23,31 +18,51 @@
   [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(tableViewSelectionDidChange:) name:nil object:self.tableView];
 }
 
-- (void) searchFor:(NSString *) searchText loadFirst:(BOOL) loadIt
+- (void) searchFor:(NSString *) searchText loadFirst:(BOOL)loadFirst
 {
   if ([DMMTokenStore hasDataStoreFile]) {
     self.searchResults = [DMMTokenStore tokensWithText:searchText];
-    self.selectedIndex = -1;
-    if (loadIt && self.searchResults.count > 0) {
-      [self loadURLForIndex:0];
+    if (loadFirst && self.searchResults.count > 0) {
+      [self loadURLForIndex:0 intoView:self.webView];
     }
   } else {
-    NSAlert *alert = [NSAlert alertWithMessageText:@"No Documentation Set is currently loaded. Please install a set via the File menu." defaultButton:nil alternateButton:nil otherButton:nil informativeTextWithFormat:@""];
-    [alert runModal];
+    [self showDocSetMissingAlert];
   }
 }
 
-- (void) loadURLForIndex:(NSInteger) index
+- (void) displayFirstResultFor: (NSString *) searchText atPoint:(CGPoint) origin
+{
+  if ([DMMTokenStore hasDataStoreFile]) {
+    self.searchResults = [DMMTokenStore tokensWithText:searchText];
+    [self.popoverContainerWindow setFrameOrigin:origin];
+    [self.popoverContainerWindow setBackgroundColor:[NSColor clearColor]];
+    if (![self.popoverContainerWindow isVisible]) {
+      [self.popoverContainerWindow orderFrontRegardless];
+    }
+    NSView *anchorView = (NSView *) self.popoverContainerWindow.contentView;
+
+    [self.popover showRelativeToRect:NSRectFromCGRect(CGRectMake(0, 0, 10, anchorView.frame.size.height)) ofView:anchorView preferredEdge:NSMaxYEdge];
+
+    if (self.searchResults.count > 0) {
+      [self loadURLForIndex:0 intoView:self.popover.webView];
+    } else {
+      [[self.popover.webView mainFrame] loadHTMLString:@"<big><em>No Results Found</em></big>" baseURL:nil];
+    }
+  } else {
+    [self showDocSetMissingAlert];
+  }
+}
+
+- (void) loadURLForIndex:(NSInteger) index intoView: (WebView *) view
 {
   if (self.searchResults.count > index) {
     DMMSearchResult *item = (DMMSearchResult *)self.searchResults[index];
-    NSURL *root = [((DMMAppDelegate *)[[NSApplication sharedApplication] delegate]) docSetDirectory];
-    NSString *itemPath = [NSString stringWithFormat:@"Contents/Resources/Documents/%@", item.path];
-    NSURL *url = [NSURL URLWithString:itemPath relativeToURL:root];
-    NSURLRequest *request = [NSURLRequest requestWithURL:url];
-    [[self.webView mainFrame] loadRequest:request];
+    NSURLRequest *req = [NSURLRequest requestWithURL:item.path];
+    [[view mainFrame] loadRequest:req];
   }
 }
+
+#pragma mark Delegate Events
 
 -(void)controlTextDidChange:(NSNotification *)notification
 {
@@ -60,9 +75,22 @@
 
 - (void) tableViewSelectionDidChange:(NSNotification *)notification
 {
-  if (self.tableView.selectedRow != self.selectedIndex) {
-    self.selectedIndex = self.tableView.selectedRow;
-    [self loadURLForIndex:self.selectedIndex];
+  if ([[notification name] isEqualToString:NSTableViewSelectionDidChangeNotification]) {
+    [self loadURLForIndex:self.tableView.selectedRow intoView:self.webView];
   }
 }
+
+- (void)popoverDidClose:(NSNotification *)notification
+{
+  [self.popoverContainerWindow orderOut:self];
+}
+
+#pragma mark Error Handling
+
+- (void) showDocSetMissingAlert
+{
+  NSAlert *alert = [NSAlert alertWithMessageText:@"No Documentation Set is currently loaded. Please install a set via the File menu." defaultButton:nil alternateButton:nil otherButton:nil informativeTextWithFormat:@""];
+  [alert runModal];
+}
+
 @end

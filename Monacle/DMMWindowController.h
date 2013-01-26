@@ -7,12 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
-
-@interface DMMWindowController : NSWindowController <NSTableViewDelegate, NSTableViewDataSource, NSTextFieldDelegate>
+#import "DMMPopover.h"
+@interface DMMWindowController : NSWindowController <NSTableViewDelegate, NSTableViewDataSource, NSTextFieldDelegate, NSPopoverDelegate>
 
 @property (nonatomic, weak) IBOutlet WebView *webView;
 @property (nonatomic, weak) IBOutlet NSTableView *tableView;
 @property (weak) IBOutlet NSArrayController *arrayController;
 @property (nonatomic, strong) NSArray *searchResults;
-- (void) searchFor:(NSString *) searchText loadFirst: (BOOL) loadIt;
+@property (weak) IBOutlet DMMPopover *popover;
+@property (unsafe_unretained) IBOutlet NSPanel *popoverContainerWindow;
+
+- (void) searchFor:(NSString *) searchText loadFirst: (BOOL) loadFirst;
+- (void) displayFirstResultFor: (NSString *) searchText atPoint:(CGPoint) origin;
 @end

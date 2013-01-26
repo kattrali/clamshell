@@ -19,7 +19,6 @@
 		8A76E2EB16B108A500E5DBC4 /* libFMDB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A76E2EA16B108A500E5DBC4 /* libFMDB.a */; };
 		8A76E2F216B173E700E5DBC4 /* DMMSearchResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A76E2F116B173E700E5DBC4 /* DMMSearchResult.m */; };
 		8A76E2F516B1752900E5DBC4 /* DMMTokenStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A76E2F416B1752900E5DBC4 /* DMMTokenStore.m */; };
-		8A76E30C16B1E1A200E5DBC4 /* PXSourceList.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A76E30916B1E1A200E5DBC4 /* PXSourceList.m */; };
 		8A76E31016B2070100E5DBC4 /* DMMURLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A76E30F16B2070100E5DBC4 /* DMMURLParser.m */; };
 		8A9256B216B2FDBE00A85653 /* script-attribute-c.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A9256AE16B2FDBE00A85653 /* script-attribute-c.png */; };
 		8A9256B316B2FDBE00A85653 /* script-attribute-i.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A9256AF16B2FDBE00A85653 /* script-attribute-i.png */; };
@@ -27,6 +26,7 @@
 		8A9256B516B2FDBE00A85653 /* script-block.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A9256B116B2FDBE00A85653 /* script-block.png */; };
 		8A9256B716B2FDCF00A85653 /* layers.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A9256B616B2FDCF00A85653 /* layers.png */; };
 		8A9256B916B31A0000A85653 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 8A9256B816B31A0000A85653 /* LICENSE */; };
+		8A9256BD16B3427000A85653 /* DMMPopover.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A9256BC16B3427000A85653 /* DMMPopover.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,10 +56,6 @@
 		8A76E30416B1C34800E5DBC4 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
 		8A76E30516B1C34800E5DBC4 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
 		8A76E30616B1C34800E5DBC4 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
-		8A76E30816B1E1A200E5DBC4 /* PXSourceList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXSourceList.h; sourceTree = "<group>"; };
-		8A76E30916B1E1A200E5DBC4 /* PXSourceList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PXSourceList.m; sourceTree = "<group>"; };
-		8A76E30A16B1E1A200E5DBC4 /* PXSourceListDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXSourceListDataSource.h; sourceTree = "<group>"; };
-		8A76E30B16B1E1A200E5DBC4 /* PXSourceListDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PXSourceListDelegate.h; sourceTree = "<group>"; };
 		8A76E30E16B2070100E5DBC4 /* DMMURLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMMURLParser.h; sourceTree = "<group>"; };
 		8A76E30F16B2070100E5DBC4 /* DMMURLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMMURLParser.m; sourceTree = "<group>"; };
 		8A9256AE16B2FDBE00A85653 /* script-attribute-c.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "script-attribute-c.png"; sourceTree = "<group>"; };
@@ -68,6 +64,8 @@
 		8A9256B116B2FDBE00A85653 /* script-block.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "script-block.png"; sourceTree = "<group>"; };
 		8A9256B616B2FDCF00A85653 /* layers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = layers.png; sourceTree = "<group>"; };
 		8A9256B816B31A0000A85653 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = Monacle/LICENSE; sourceTree = "<group>"; };
+		8A9256BB16B3427000A85653 /* DMMPopover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMMPopover.h; sourceTree = "<group>"; };
+		8A9256BC16B3427000A85653 /* DMMPopover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMMPopover.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,10 +126,10 @@
 		8A76E28916B0969900E5DBC4 /* ClamShell */ = {
 			isa = PBXGroup;
 			children = (
+				8A9256BA16B3425700A85653 /* Views */,
 				8A9256AD16B2FDB500A85653 /* Assets */,
 				8A9256A216B2CF9500A85653 /* Models */,
 				8A76E28A16B0969900E5DBC4 /* Supporting Files */,
-				8A76E29816B0969900E5DBC4 /* MainMenu.xib */,
 				8A76E29516B0969900E5DBC4 /* DMMAppDelegate.h */,
 				8A76E29616B0969900E5DBC4 /* DMMAppDelegate.m */,
 				8A76E2A516B0FD0B00E5DBC4 /* DMMWindowController.h */,
@@ -157,7 +155,6 @@
 			isa = PBXGroup;
 			children = (
 				8A76E30D16B206E800E5DBC4 /* DMMURLParser */,
-				8A76E30716B1E16400E5DBC4 /* PXSourceList */,
 				8A76E2FF16B1C2FB00E5DBC4 /* FMDB */,
 			);
 			name = Vendor;
@@ -173,17 +170,6 @@
 				8A76E30616B1C34800E5DBC4 /* FMResultSet.h */,
 			);
 			name = FMDB;
-			sourceTree = "<group>";
-		};
-		8A76E30716B1E16400E5DBC4 /* PXSourceList */ = {
-			isa = PBXGroup;
-			children = (
-				8A76E30816B1E1A200E5DBC4 /* PXSourceList.h */,
-				8A76E30916B1E1A200E5DBC4 /* PXSourceList.m */,
-				8A76E30A16B1E1A200E5DBC4 /* PXSourceListDataSource.h */,
-				8A76E30B16B1E1A200E5DBC4 /* PXSourceListDelegate.h */,
-			);
-			name = PXSourceList;
 			sourceTree = "<group>";
 		};
 		8A76E30D16B206E800E5DBC4 /* DMMURLParser */ = {
@@ -216,6 +202,17 @@
 				8A9256B116B2FDBE00A85653 /* script-block.png */,
 			);
 			name = Assets;
+			sourceTree = "<group>";
+		};
+		8A9256BA16B3425700A85653 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8A76E29816B0969900E5DBC4 /* MainMenu.xib */,
+				8A9256BB16B3427000A85653 /* DMMPopover.h */,
+				8A9256BC16B3427000A85653 /* DMMPopover.m */,
+			);
+			name = Views;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,8 +291,8 @@
 				8A76E2A716B0FD0B00E5DBC4 /* DMMWindowController.m in Sources */,
 				8A76E2F216B173E700E5DBC4 /* DMMSearchResult.m in Sources */,
 				8A76E2F516B1752900E5DBC4 /* DMMTokenStore.m in Sources */,
-				8A76E30C16B1E1A200E5DBC4 /* PXSourceList.m in Sources */,
 				8A76E31016B2070100E5DBC4 /* DMMURLParser.m in Sources */,
+				8A9256BD16B3427000A85653 /* DMMPopover.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +321,7 @@
 				8A76E29916B0969900E5DBC4 /* en */,
 			);
 			name = MainMenu.xib;
+			path = Monacle;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
