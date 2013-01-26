@@ -7,71 +7,65 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8A01C77516B38FE20093AE41 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 8A01C77416B38FE20093AE41 /* README.md */; };
-		8A01C77916B39A110093AE41 /* ClamShell Popover.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A01C77716B39A110093AE41 /* ClamShell Popover.png */; };
-		8A01C77A16B39A110093AE41 /* ClamShell.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A01C77816B39A110093AE41 /* ClamShell.png */; };
+		8A4963AB16B39E6C00FB2273 /* DMMURLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4963AA16B39E6C00FB2273 /* DMMURLParser.m */; };
+		8A4963AD16B39E8D00FB2273 /* libFMDB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A4963AC16B39E8D00FB2273 /* libFMDB.a */; };
+		8A4963BF16B39EFB00FB2273 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A4963BD16B39EFB00FB2273 /* MainMenu.xib */; };
+		8A4963C516B39FB100FB2273 /* script-attribute-c.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A4963C116B39FB100FB2273 /* script-attribute-c.png */; };
+		8A4963C616B39FB100FB2273 /* script-attribute-i.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A4963C216B39FB100FB2273 /* script-attribute-i.png */; };
+		8A4963C716B39FB100FB2273 /* script-attribute-m.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A4963C316B39FB100FB2273 /* script-attribute-m.png */; };
+		8A4963C816B39FB100FB2273 /* script-block.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A4963C416B39FB100FB2273 /* script-block.png */; };
+		8A4963D016B39FF600FB2273 /* ClamShell Popover.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A4963CE16B39FF600FB2273 /* ClamShell Popover.png */; };
+		8A4963D116B39FF600FB2273 /* ClamShell.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A4963CF16B39FF600FB2273 /* ClamShell.png */; };
+		8A6302C416B3A20300202329 /* DMMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6302C116B3A20300202329 /* DMMAppDelegate.m */; };
+		8A6302C516B3A20300202329 /* DMMWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6302C316B3A20300202329 /* DMMWindowController.m */; };
+		8A6302CD16B3A21E00202329 /* DMMSearchResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6302CA16B3A21E00202329 /* DMMSearchResult.m */; };
+		8A6302CE16B3A21E00202329 /* DMMTokenStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6302CC16B3A21E00202329 /* DMMTokenStore.m */; };
+		8A6302D416B3A24C00202329 /* DMMPopover.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6302D316B3A24C00202329 /* DMMPopover.m */; };
 		8A76E28416B0969900E5DBC4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A76E28316B0969900E5DBC4 /* Cocoa.framework */; };
-		8A76E28E16B0969900E5DBC4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8A76E28C16B0969900E5DBC4 /* InfoPlist.strings */; };
 		8A76E29016B0969900E5DBC4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A76E28F16B0969900E5DBC4 /* main.m */; };
 		8A76E29416B0969900E5DBC4 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 8A76E29216B0969900E5DBC4 /* Credits.rtf */; };
-		8A76E29716B0969900E5DBC4 /* DMMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A76E29616B0969900E5DBC4 /* DMMAppDelegate.m */; };
-		8A76E29A16B0969900E5DBC4 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A76E29816B0969900E5DBC4 /* MainMenu.xib */; };
 		8A76E2A416B09B9000E5DBC4 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A76E2A316B09B9000E5DBC4 /* WebKit.framework */; };
-		8A76E2A716B0FD0B00E5DBC4 /* DMMWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A76E2A616B0FD0B00E5DBC4 /* DMMWindowController.m */; };
 		8A76E2BA16B1075300E5DBC4 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A76E2B916B1075300E5DBC4 /* libsqlite3.0.dylib */; };
-		8A76E2EB16B108A500E5DBC4 /* libFMDB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A76E2EA16B108A500E5DBC4 /* libFMDB.a */; };
-		8A76E2F216B173E700E5DBC4 /* DMMSearchResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A76E2F116B173E700E5DBC4 /* DMMSearchResult.m */; };
-		8A76E2F516B1752900E5DBC4 /* DMMTokenStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A76E2F416B1752900E5DBC4 /* DMMTokenStore.m */; };
-		8A76E31016B2070100E5DBC4 /* DMMURLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A76E30F16B2070100E5DBC4 /* DMMURLParser.m */; };
-		8A9256B216B2FDBE00A85653 /* script-attribute-c.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A9256AE16B2FDBE00A85653 /* script-attribute-c.png */; };
-		8A9256B316B2FDBE00A85653 /* script-attribute-i.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A9256AF16B2FDBE00A85653 /* script-attribute-i.png */; };
-		8A9256B416B2FDBE00A85653 /* script-attribute-m.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A9256B016B2FDBE00A85653 /* script-attribute-m.png */; };
-		8A9256B516B2FDBE00A85653 /* script-block.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A9256B116B2FDBE00A85653 /* script-block.png */; };
-		8A9256B716B2FDCF00A85653 /* layers.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A9256B616B2FDCF00A85653 /* layers.png */; };
-		8A9256B916B31A0000A85653 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 8A9256B816B31A0000A85653 /* LICENSE */; };
-		8A9256BD16B3427000A85653 /* DMMPopover.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A9256BC16B3427000A85653 /* DMMPopover.m */; };
+		8AAD4FB316B3A60A00F342BF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8AAD4FB116B3A60A00F342BF /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8A01C77416B38FE20093AE41 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
-		8A01C77716B39A110093AE41 /* ClamShell Popover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ClamShell Popover.png"; sourceTree = "<group>"; };
-		8A01C77816B39A110093AE41 /* ClamShell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ClamShell.png; sourceTree = "<group>"; };
+		8A4963A916B39E6C00FB2273 /* DMMURLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DMMURLParser.h; path = Vendor/DMMURLParser/DMMURLParser.h; sourceTree = "<group>"; };
+		8A4963AA16B39E6C00FB2273 /* DMMURLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DMMURLParser.m; path = Vendor/DMMURLParser/DMMURLParser.m; sourceTree = "<group>"; };
+		8A4963AC16B39E8D00FB2273 /* libFMDB.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFMDB.a; path = Vendor/FMDB/libFMDB.a; sourceTree = "<group>"; };
+		8A4963AE16B39EA600FB2273 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = Vendor/FMDB/FMDatabase.h; sourceTree = "<group>"; };
+		8A4963AF16B39EA600FB2273 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabaseAdditions.h; path = Vendor/FMDB/FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		8A4963B016B39EA600FB2273 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabasePool.h; path = Vendor/FMDB/FMDatabasePool.h; sourceTree = "<group>"; };
+		8A4963B116B39EA600FB2273 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabaseQueue.h; path = Vendor/FMDB/FMDatabaseQueue.h; sourceTree = "<group>"; };
+		8A4963B216B39EA600FB2273 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = Vendor/FMDB/FMResultSet.h; sourceTree = "<group>"; };
+		8A4963BE16B39EFB00FB2273 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = ClamShell/en.lproj/MainMenu.xib; sourceTree = SOURCE_ROOT; };
+		8A4963C116B39FB100FB2273 /* script-attribute-c.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "script-attribute-c.png"; path = "ClamShell/Assets/script-attribute-c.png"; sourceTree = SOURCE_ROOT; };
+		8A4963C216B39FB100FB2273 /* script-attribute-i.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "script-attribute-i.png"; path = "ClamShell/Assets/script-attribute-i.png"; sourceTree = SOURCE_ROOT; };
+		8A4963C316B39FB100FB2273 /* script-attribute-m.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "script-attribute-m.png"; path = "ClamShell/Assets/script-attribute-m.png"; sourceTree = SOURCE_ROOT; };
+		8A4963C416B39FB100FB2273 /* script-block.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "script-block.png"; path = "ClamShell/Assets/script-block.png"; sourceTree = SOURCE_ROOT; };
+		8A4963CE16B39FF600FB2273 /* ClamShell Popover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ClamShell Popover.png"; path = "Documentation/ClamShell Popover.png"; sourceTree = "<group>"; };
+		8A4963CF16B39FF600FB2273 /* ClamShell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ClamShell.png; path = Documentation/ClamShell.png; sourceTree = "<group>"; };
+		8A6302BE16B3A1EC00202329 /* ClamShell-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "ClamShell-Info.plist"; path = "Supporting Files/ClamShell-Info.plist"; sourceTree = "<group>"; };
+		8A6302C016B3A20300202329 /* DMMAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DMMAppDelegate.h; path = ClamShell/Classes/DMMAppDelegate.h; sourceTree = SOURCE_ROOT; };
+		8A6302C116B3A20300202329 /* DMMAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DMMAppDelegate.m; path = ClamShell/Classes/DMMAppDelegate.m; sourceTree = SOURCE_ROOT; };
+		8A6302C216B3A20300202329 /* DMMWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DMMWindowController.h; path = ClamShell/Classes/DMMWindowController.h; sourceTree = SOURCE_ROOT; };
+		8A6302C316B3A20300202329 /* DMMWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DMMWindowController.m; path = ClamShell/Classes/DMMWindowController.m; sourceTree = SOURCE_ROOT; };
+		8A6302C916B3A21E00202329 /* DMMSearchResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DMMSearchResult.h; path = ClamShell/Classes/DMMSearchResult.h; sourceTree = SOURCE_ROOT; };
+		8A6302CA16B3A21E00202329 /* DMMSearchResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DMMSearchResult.m; path = ClamShell/Classes/DMMSearchResult.m; sourceTree = SOURCE_ROOT; };
+		8A6302CB16B3A21E00202329 /* DMMTokenStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DMMTokenStore.h; path = ClamShell/Classes/DMMTokenStore.h; sourceTree = SOURCE_ROOT; };
+		8A6302CC16B3A21E00202329 /* DMMTokenStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DMMTokenStore.m; path = ClamShell/Classes/DMMTokenStore.m; sourceTree = SOURCE_ROOT; };
+		8A6302D216B3A24C00202329 /* DMMPopover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DMMPopover.h; path = ClamShell/Classes/DMMPopover.h; sourceTree = "<group>"; };
+		8A6302D316B3A24C00202329 /* DMMPopover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DMMPopover.m; path = ClamShell/Classes/DMMPopover.m; sourceTree = "<group>"; };
 		8A76E27F16B0969900E5DBC4 /* ClamShell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClamShell.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A76E28316B0969900E5DBC4 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		8A76E28616B0969900E5DBC4 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		8A76E28816B0969900E5DBC4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		8A76E28B16B0969900E5DBC4 /* ClamShell-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ClamShell-Info.plist"; sourceTree = "<group>"; };
-		8A76E28D16B0969900E5DBC4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		8A76E28F16B0969900E5DBC4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		8A76E29116B0969900E5DBC4 /* ClamShell-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ClamShell-Prefix.pch"; sourceTree = "<group>"; };
+		8A76E28F16B0969900E5DBC4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "Supporting Files/main.m"; sourceTree = "<group>"; };
+		8A76E29116B0969900E5DBC4 /* ClamShell-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "ClamShell-Prefix.pch"; path = "Supporting Files/ClamShell-Prefix.pch"; sourceTree = "<group>"; };
 		8A76E29316B0969900E5DBC4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		8A76E29516B0969900E5DBC4 /* DMMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMMAppDelegate.h; sourceTree = "<group>"; };
-		8A76E29616B0969900E5DBC4 /* DMMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMMAppDelegate.m; sourceTree = "<group>"; };
-		8A76E29916B0969900E5DBC4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		8A76E2A316B09B9000E5DBC4 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
-		8A76E2A516B0FD0B00E5DBC4 /* DMMWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMMWindowController.h; sourceTree = "<group>"; };
-		8A76E2A616B0FD0B00E5DBC4 /* DMMWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMMWindowController.m; sourceTree = "<group>"; };
 		8A76E2B916B1075300E5DBC4 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
-		8A76E2EA16B108A500E5DBC4 /* libFMDB.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFMDB.a; sourceTree = "<group>"; };
-		8A76E2F016B173E700E5DBC4 /* DMMSearchResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMMSearchResult.h; sourceTree = "<group>"; };
-		8A76E2F116B173E700E5DBC4 /* DMMSearchResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMMSearchResult.m; sourceTree = "<group>"; };
-		8A76E2F316B1752900E5DBC4 /* DMMTokenStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMMTokenStore.h; sourceTree = "<group>"; };
-		8A76E2F416B1752900E5DBC4 /* DMMTokenStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMMTokenStore.m; sourceTree = "<group>"; };
-		8A76E30216B1C34800E5DBC4 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
-		8A76E30316B1C34800E5DBC4 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
-		8A76E30416B1C34800E5DBC4 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
-		8A76E30516B1C34800E5DBC4 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
-		8A76E30616B1C34800E5DBC4 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
-		8A76E30E16B2070100E5DBC4 /* DMMURLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMMURLParser.h; sourceTree = "<group>"; };
-		8A76E30F16B2070100E5DBC4 /* DMMURLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMMURLParser.m; sourceTree = "<group>"; };
-		8A9256AE16B2FDBE00A85653 /* script-attribute-c.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "script-attribute-c.png"; sourceTree = "<group>"; };
-		8A9256AF16B2FDBE00A85653 /* script-attribute-i.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "script-attribute-i.png"; sourceTree = "<group>"; };
-		8A9256B016B2FDBE00A85653 /* script-attribute-m.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "script-attribute-m.png"; sourceTree = "<group>"; };
-		8A9256B116B2FDBE00A85653 /* script-block.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "script-block.png"; sourceTree = "<group>"; };
-		8A9256B616B2FDCF00A85653 /* layers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = layers.png; sourceTree = "<group>"; };
-		8A9256B816B31A0000A85653 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = Monacle/LICENSE; sourceTree = "<group>"; };
-		8A9256BB16B3427000A85653 /* DMMPopover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMMPopover.h; sourceTree = "<group>"; };
-		8A9256BC16B3427000A85653 /* DMMPopover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMMPopover.m; sourceTree = "<group>"; };
+		8AAD4FB216B3A60A00F342BF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +76,7 @@
 				8A76E2BA16B1075300E5DBC4 /* libsqlite3.0.dylib in Frameworks */,
 				8A76E2A416B09B9000E5DBC4 /* WebKit.framework in Frameworks */,
 				8A76E28416B0969900E5DBC4 /* Cocoa.framework in Frameworks */,
-				8A76E2EB16B108A500E5DBC4 /* libFMDB.a in Frameworks */,
+				8A4963AD16B39E8D00FB2273 /* libFMDB.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,10 +86,8 @@
 		8A01C77616B397A70093AE41 /* Documentation */ = {
 			isa = PBXGroup;
 			children = (
-				8A01C77716B39A110093AE41 /* ClamShell Popover.png */,
-				8A01C77816B39A110093AE41 /* ClamShell.png */,
-				8A9256B816B31A0000A85653 /* LICENSE */,
-				8A01C77416B38FE20093AE41 /* README.md */,
+				8A4963CE16B39FF600FB2273 /* ClamShell Popover.png */,
+				8A4963CF16B39FF600FB2273 /* ClamShell.png */,
 			);
 			name = Documentation;
 			sourceTree = "<group>";
@@ -103,11 +95,11 @@
 		8A76E27416B0969900E5DBC4 = {
 			isa = PBXGroup;
 			children = (
+				8A01C77616B397A70093AE41 /* Documentation */,
+				8A76E2A816B1073000E5DBC4 /* Vendor */,
 				8A76E28916B0969900E5DBC4 /* ClamShell */,
 				8A76E28216B0969900E5DBC4 /* Frameworks */,
 				8A76E28016B0969900E5DBC4 /* Products */,
-				8A76E2A816B1073000E5DBC4 /* Vendor */,
-				8A01C77616B397A70093AE41 /* Documentation */,
 			);
 			sourceTree = "<group>";
 		};
@@ -122,7 +114,7 @@
 		8A76E28216B0969900E5DBC4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8A76E2EA16B108A500E5DBC4 /* libFMDB.a */,
+				8A4963AC16B39E8D00FB2273 /* libFMDB.a */,
 				8A76E2B916B1075300E5DBC4 /* libsqlite3.0.dylib */,
 				8A76E2A316B09B9000E5DBC4 /* WebKit.framework */,
 				8A76E28316B0969900E5DBC4 /* Cocoa.framework */,
@@ -143,24 +135,23 @@
 		8A76E28916B0969900E5DBC4 /* ClamShell */ = {
 			isa = PBXGroup;
 			children = (
+				8A6302C016B3A20300202329 /* DMMAppDelegate.h */,
+				8A6302C116B3A20300202329 /* DMMAppDelegate.m */,
+				8A6302C216B3A20300202329 /* DMMWindowController.h */,
+				8A6302C316B3A20300202329 /* DMMWindowController.m */,
 				8A9256BA16B3425700A85653 /* Views */,
 				8A9256AD16B2FDB500A85653 /* Assets */,
 				8A9256A216B2CF9500A85653 /* Models */,
 				8A76E28A16B0969900E5DBC4 /* Supporting Files */,
-				8A76E29516B0969900E5DBC4 /* DMMAppDelegate.h */,
-				8A76E29616B0969900E5DBC4 /* DMMAppDelegate.m */,
-				8A76E2A516B0FD0B00E5DBC4 /* DMMWindowController.h */,
-				8A76E2A616B0FD0B00E5DBC4 /* DMMWindowController.m */,
 			);
-			name = ClamShell;
-			path = Monacle;
+			path = ClamShell;
 			sourceTree = "<group>";
 		};
 		8A76E28A16B0969900E5DBC4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				8A76E28B16B0969900E5DBC4 /* ClamShell-Info.plist */,
-				8A76E28C16B0969900E5DBC4 /* InfoPlist.strings */,
+				8AAD4FB116B3A60A00F342BF /* InfoPlist.strings */,
+				8A6302BE16B3A1EC00202329 /* ClamShell-Info.plist */,
 				8A76E28F16B0969900E5DBC4 /* main.m */,
 				8A76E29116B0969900E5DBC4 /* ClamShell-Prefix.pch */,
 				8A76E29216B0969900E5DBC4 /* Credits.rtf */,
@@ -180,11 +171,11 @@
 		8A76E2FF16B1C2FB00E5DBC4 /* FMDB */ = {
 			isa = PBXGroup;
 			children = (
-				8A76E30216B1C34800E5DBC4 /* FMDatabase.h */,
-				8A76E30316B1C34800E5DBC4 /* FMDatabaseAdditions.h */,
-				8A76E30416B1C34800E5DBC4 /* FMDatabasePool.h */,
-				8A76E30516B1C34800E5DBC4 /* FMDatabaseQueue.h */,
-				8A76E30616B1C34800E5DBC4 /* FMResultSet.h */,
+				8A4963AE16B39EA600FB2273 /* FMDatabase.h */,
+				8A4963AF16B39EA600FB2273 /* FMDatabaseAdditions.h */,
+				8A4963B016B39EA600FB2273 /* FMDatabasePool.h */,
+				8A4963B116B39EA600FB2273 /* FMDatabaseQueue.h */,
+				8A4963B216B39EA600FB2273 /* FMResultSet.h */,
 			);
 			name = FMDB;
 			sourceTree = "<group>";
@@ -192,8 +183,8 @@
 		8A76E30D16B206E800E5DBC4 /* DMMURLParser */ = {
 			isa = PBXGroup;
 			children = (
-				8A76E30E16B2070100E5DBC4 /* DMMURLParser.h */,
-				8A76E30F16B2070100E5DBC4 /* DMMURLParser.m */,
+				8A4963A916B39E6C00FB2273 /* DMMURLParser.h */,
+				8A4963AA16B39E6C00FB2273 /* DMMURLParser.m */,
 			);
 			name = DMMURLParser;
 			sourceTree = "<group>";
@@ -201,10 +192,10 @@
 		8A9256A216B2CF9500A85653 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				8A76E2F016B173E700E5DBC4 /* DMMSearchResult.h */,
-				8A76E2F116B173E700E5DBC4 /* DMMSearchResult.m */,
-				8A76E2F316B1752900E5DBC4 /* DMMTokenStore.h */,
-				8A76E2F416B1752900E5DBC4 /* DMMTokenStore.m */,
+				8A6302C916B3A21E00202329 /* DMMSearchResult.h */,
+				8A6302CA16B3A21E00202329 /* DMMSearchResult.m */,
+				8A6302CB16B3A21E00202329 /* DMMTokenStore.h */,
+				8A6302CC16B3A21E00202329 /* DMMTokenStore.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -212,11 +203,10 @@
 		8A9256AD16B2FDB500A85653 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				8A9256B616B2FDCF00A85653 /* layers.png */,
-				8A9256AE16B2FDBE00A85653 /* script-attribute-c.png */,
-				8A9256AF16B2FDBE00A85653 /* script-attribute-i.png */,
-				8A9256B016B2FDBE00A85653 /* script-attribute-m.png */,
-				8A9256B116B2FDBE00A85653 /* script-block.png */,
+				8A4963C116B39FB100FB2273 /* script-attribute-c.png */,
+				8A4963C216B39FB100FB2273 /* script-attribute-i.png */,
+				8A4963C316B39FB100FB2273 /* script-attribute-m.png */,
+				8A4963C416B39FB100FB2273 /* script-block.png */,
 			);
 			name = Assets;
 			sourceTree = "<group>";
@@ -224,9 +214,9 @@
 		8A9256BA16B3425700A85653 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				8A76E29816B0969900E5DBC4 /* MainMenu.xib */,
-				8A9256BB16B3427000A85653 /* DMMPopover.h */,
-				8A9256BC16B3427000A85653 /* DMMPopover.m */,
+				8A6302D216B3A24C00202329 /* DMMPopover.h */,
+				8A6302D316B3A24C00202329 /* DMMPopover.m */,
+				8A4963BD16B39EFB00FB2273 /* MainMenu.xib */,
 			);
 			name = Views;
 			path = ..;
@@ -248,7 +238,7 @@
 			dependencies = (
 			);
 			name = ClamShell;
-			productName = Monacle;
+			productName = ClamShell;
 			productReference = 8A76E27F16B0969900E5DBC4 /* ClamShell.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -284,18 +274,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A76E28E16B0969900E5DBC4 /* InfoPlist.strings in Resources */,
 				8A76E29416B0969900E5DBC4 /* Credits.rtf in Resources */,
-				8A76E29A16B0969900E5DBC4 /* MainMenu.xib in Resources */,
-				8A9256B216B2FDBE00A85653 /* script-attribute-c.png in Resources */,
-				8A9256B316B2FDBE00A85653 /* script-attribute-i.png in Resources */,
-				8A9256B416B2FDBE00A85653 /* script-attribute-m.png in Resources */,
-				8A9256B516B2FDBE00A85653 /* script-block.png in Resources */,
-				8A9256B716B2FDCF00A85653 /* layers.png in Resources */,
-				8A9256B916B31A0000A85653 /* LICENSE in Resources */,
-				8A01C77516B38FE20093AE41 /* README.md in Resources */,
-				8A01C77916B39A110093AE41 /* ClamShell Popover.png in Resources */,
-				8A01C77A16B39A110093AE41 /* ClamShell.png in Resources */,
+				8A4963BF16B39EFB00FB2273 /* MainMenu.xib in Resources */,
+				8A4963C516B39FB100FB2273 /* script-attribute-c.png in Resources */,
+				8A4963C616B39FB100FB2273 /* script-attribute-i.png in Resources */,
+				8A4963C716B39FB100FB2273 /* script-attribute-m.png in Resources */,
+				8A4963C816B39FB100FB2273 /* script-block.png in Resources */,
+				8A4963D016B39FF600FB2273 /* ClamShell Popover.png in Resources */,
+				8A4963D116B39FF600FB2273 /* ClamShell.png in Resources */,
+				8AAD4FB316B3A60A00F342BF /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,24 +294,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A76E29016B0969900E5DBC4 /* main.m in Sources */,
-				8A76E29716B0969900E5DBC4 /* DMMAppDelegate.m in Sources */,
-				8A76E2A716B0FD0B00E5DBC4 /* DMMWindowController.m in Sources */,
-				8A76E2F216B173E700E5DBC4 /* DMMSearchResult.m in Sources */,
-				8A76E2F516B1752900E5DBC4 /* DMMTokenStore.m in Sources */,
-				8A76E31016B2070100E5DBC4 /* DMMURLParser.m in Sources */,
-				8A9256BD16B3427000A85653 /* DMMPopover.m in Sources */,
+				8A4963AB16B39E6C00FB2273 /* DMMURLParser.m in Sources */,
+				8A6302C416B3A20300202329 /* DMMAppDelegate.m in Sources */,
+				8A6302C516B3A20300202329 /* DMMWindowController.m in Sources */,
+				8A6302CD16B3A21E00202329 /* DMMSearchResult.m in Sources */,
+				8A6302CE16B3A21E00202329 /* DMMTokenStore.m in Sources */,
+				8A6302D416B3A24C00202329 /* DMMPopover.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		8A76E28C16B0969900E5DBC4 /* InfoPlist.strings */ = {
+		8A4963BD16B39EFB00FB2273 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				8A76E28D16B0969900E5DBC4 /* en */,
+				8A4963BE16B39EFB00FB2273 /* en */,
 			);
-			name = InfoPlist.strings;
+			name = MainMenu.xib;
+			path = ClamShell;
 			sourceTree = "<group>";
 		};
 		8A76E29216B0969900E5DBC4 /* Credits.rtf */ = {
@@ -335,13 +323,12 @@
 			name = Credits.rtf;
 			sourceTree = "<group>";
 		};
-		8A76E29816B0969900E5DBC4 /* MainMenu.xib */ = {
+		8AAD4FB116B3A60A00F342BF /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				8A76E29916B0969900E5DBC4 /* en */,
+				8AAD4FB216B3A60A00F342BF /* en */,
 			);
-			name = MainMenu.xib;
-			path = Monacle;
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -405,11 +392,12 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Monacle/ClamShell-Prefix.pch";
-				INFOPLIST_FILE = "Monacle/ClamShell-Info.plist";
+				GCC_PREFIX_HEADER = "ClamShell/Supporting Files/ClamShell-Prefix.pch";
+				INFOPLIST_FILE = "ClamShell/Supporting Files/ClamShell-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/Vendor/FMDB\"",
 				);
 				PRODUCT_NAME = ClamShell;
 				WRAPPER_EXTENSION = app;
@@ -421,11 +409,12 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Monacle/ClamShell-Prefix.pch";
-				INFOPLIST_FILE = "Monacle/ClamShell-Info.plist";
+				GCC_PREFIX_HEADER = "ClamShell/Supporting Files/ClamShell-Prefix.pch";
+				INFOPLIST_FILE = "ClamShell/Supporting Files/ClamShell-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/Vendor/FMDB\"",
 				);
 				PRODUCT_NAME = ClamShell;
 				WRAPPER_EXTENSION = app;
