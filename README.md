@@ -7,7 +7,7 @@ Tidy Documentation Viewer
 
 ClamShell is a fast and flexible documentation viewer. It can be used as a standalone window or as a popover above other running applications.
 
-![ClamShell Window](https://github.com/kattrali/clamshell/raw/master/ClamShell.png)
+![ClamShell Window](https://github.com/kattrali/clamshell/raw/master/Documentation/ClamShell.png)
 
 
 ## Usage
@@ -25,6 +25,6 @@ ClamShell is a fast and flexible documentation viewer. It can be used as a stand
 
 To launch ClamShell as a popover, call `open clamshell://searchText=text` and append `&x=500&y=600` where `x` and `y` are the origin coordinates for the popover arrow, relative to the bottom left corner of the screen.
 
-![ClamShell Window](https://github.com/kattrali/clamshell/raw/master/ClamShell%20Popover.png)
+![ClamShell Window](https://github.com/kattrali/clamshell/raw/master/Documentation/ClamShell%20Popover.png)
 
 Example usage for ClamShell, integrated into Redcar Editor.
