@@ -1,0 +1,16 @@
+PODS:
+  - FMDB (2.0)
+  - Kiwi (2.0.6)
+  - ObjectiveSugar (0.6.2)
+
+DEPENDENCIES:
+  - FMDB
+  - Kiwi
+  - ObjectiveSugar
+
+SPEC CHECKSUMS:
+  FMDB: 77fb1c93b51bbf14d84d49d5374344b7f68c54f1
+  Kiwi: 56082a80f942de4d10423d8d8a599ab30cf50228
+  ObjectiveSugar: 50bcd329b18ab6da6457e1bf55be71acb7c39d44
+
+COCOAPODS: 0.17.1
