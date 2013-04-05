@@ -9,7 +9,6 @@ ClamShell is a fast and flexible documentation viewer. It can be used as a stand
 
 ![ClamShell Window](https://github.com/kattrali/clamshell/raw/master/Documentation/ClamShell.png)
 
-
 ## Usage
 
 - Download a [Documentation Set](http://code.google.com/p/dash-docsets/downloads/list) on a topic that interests you.
@@ -20,7 +19,6 @@ ClamShell is a fast and flexible documentation viewer. It can be used as a stand
 
 - Use the search bar to find useful documentation or launch ClamShell as a popover as detailed below:
 
-
 ## Integration Usage
 
 To launch ClamShell as a popover, call `open clamshell://searchText=text` and append `&x=500&y=600` where `x` and `y` are the origin coordinates for the popover arrow, relative to the bottom left corner of the screen.
@@ -28,3 +26,15 @@ To launch ClamShell as a popover, call `open clamshell://searchText=text` and ap
 ![ClamShell Window](https://github.com/kattrali/clamshell/raw/master/Documentation/ClamShell%20Popover.png)
 
 Example usage for ClamShell, integrated into Redcar Editor.
+
+## Building ClamShell
+
+ClamShell uses CocoaPods for dependency management. To configure:
+- Install CocoaPods using `gem install cocoapods` and `pod setup`
+- Install the required pods from the command line using `pod install`
+
+Open the xcworkspace for ClamShell and run the ClamShell scheme default target to start ClamShell.
+
+## Testing
+
+ClamShell is tested using Kiwi. Run tests using the ClamShell default scheme and selecting `Menu > Product > Test`.

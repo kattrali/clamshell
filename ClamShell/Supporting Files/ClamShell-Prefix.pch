@@ -9,4 +9,6 @@
   #import "DMMWindowController.h"
   #import "DMMSearchResult.h"
   #import "DMMTokenStore.h"
+  #import "NSArray+ObjectiveSugar.h"
+  #import "DMMConstants.h"
 #endif

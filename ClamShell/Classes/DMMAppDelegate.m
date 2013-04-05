@@ -67,7 +67,7 @@
     NSFileManager *manager = [NSFileManager defaultManager];
     NSURL *appSupportURL = [[manager URLsForDirectory:NSApplicationSupportDirectory inDomains:NSUserDomainMask] lastObject];
     
-    NSURL *dir = [appSupportURL URLByAppendingPathComponent:@"ClamShell"];
+    NSURL *dir = [appSupportURL URLByAppendingPathComponent:PackageFolderName];
     if(![manager fileExistsAtPath:[dir path]]) {
       [manager createDirectoryAtPath:[dir path] withIntermediateDirectories:YES attributes:nil error:nil];
     }

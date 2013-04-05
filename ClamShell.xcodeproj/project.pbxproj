@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0E17FC8C3F3D43698741D716 /* libPods-ClamShellTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C8C66B357CBA4A0BBB2632E7 /* libPods-ClamShellTests.a */; };
+		8A1D7C99170E13CE00A2C548 /* DMMConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1D7C98170E13CE00A2C548 /* DMMConstants.m */; };
+		8A1D7C9A170E13CE00A2C548 /* DMMConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1D7C98170E13CE00A2C548 /* DMMConstants.m */; };
 		8A3CE504170B245C00BEC7D0 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A3CE503170B245C00BEC7D0 /* Cocoa.framework */; };
 		8A4963AB16B39E6C00FB2273 /* DMMURLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4963AA16B39E6C00FB2273 /* DMMURLParser.m */; };
 		8A4963BF16B39EFB00FB2273 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A4963BD16B39EFB00FB2273 /* MainMenu.xib */; };
@@ -30,12 +32,16 @@
 		8ACBA253170B28FE0018FD62 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ACBA252170B28FE0018FD62 /* SenTestingKit.framework */; };
 		8ACBA254170B28FE0018FD62 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A3CE503170B245C00BEC7D0 /* Cocoa.framework */; };
 		8ACBA25B170B28FE0018FD62 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8ACBA259170B28FE0018FD62 /* InfoPlist.strings */; };
-		8ADD2E8C170B32BC00347F96 /* DMMSampleSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ADD2E8B170B32BC00347F96 /* DMMSampleSpec.m */; };
+		8ADD2E8C170B32BC00347F96 /* DMMSearchResultSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ADD2E8B170B32BC00347F96 /* DMMSearchResultSpec.m */; };
+		8ADD2E8F170B5DD200347F96 /* DMMTokenStoreSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ADD2E8E170B5DD200347F96 /* DMMTokenStoreSpec.m */; };
+		8ADD2E92170B620600347F96 /* DMMURLParserSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ADD2E91170B620600347F96 /* DMMURLParserSpec.m */; };
 		FCE69399270A437B816CEA5F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B1CA24A74C1941C2BE218EC4 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		049558A447604621BFFB55EC /* Pods-ClamShellTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClamShellTests.xcconfig"; path = "Pods/Pods-ClamShellTests.xcconfig"; sourceTree = SOURCE_ROOT; };
+		8A1D7C97170E13CE00A2C548 /* DMMConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMMConstants.h; sourceTree = "<group>"; };
+		8A1D7C98170E13CE00A2C548 /* DMMConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMMConstants.m; sourceTree = "<group>"; };
 		8A3CE503170B245C00BEC7D0 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		8A4963A916B39E6C00FB2273 /* DMMURLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DMMURLParser.h; path = Vendor/DMMURLParser/DMMURLParser.h; sourceTree = "<group>"; };
 		8A4963AA16B39E6C00FB2273 /* DMMURLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DMMURLParser.m; path = Vendor/DMMURLParser/DMMURLParser.m; sourceTree = "<group>"; };
@@ -72,7 +78,9 @@
 		8ACBA258170B28FE0018FD62 /* ClamShellTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ClamShellTests-Info.plist"; sourceTree = "<group>"; };
 		8ACBA25A170B28FE0018FD62 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8ACBA25F170B28FE0018FD62 /* ClamShellTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ClamShellTests-Prefix.pch"; sourceTree = "<group>"; };
-		8ADD2E8B170B32BC00347F96 /* DMMSampleSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMMSampleSpec.m; sourceTree = "<group>"; };
+		8ADD2E8B170B32BC00347F96 /* DMMSearchResultSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMMSearchResultSpec.m; sourceTree = "<group>"; };
+		8ADD2E8E170B5DD200347F96 /* DMMTokenStoreSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMMTokenStoreSpec.m; sourceTree = "<group>"; };
+		8ADD2E91170B620600347F96 /* DMMURLParserSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMMURLParserSpec.m; sourceTree = "<group>"; };
 		B1CA24A74C1941C2BE218EC4 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8C66B357CBA4A0BBB2632E7 /* libPods-ClamShellTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ClamShellTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1A86D66BEC54D4DAA18CD79 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
@@ -118,7 +126,7 @@
 				8A01C77616B397A70093AE41 /* Documentation */,
 				8A76E2A816B1073000E5DBC4 /* Vendor */,
 				8A76E28916B0969900E5DBC4 /* ClamShell */,
-				8ACBA256170B28FE0018FD62 /* ClamShellTests */,
+				8ACBA256170B28FE0018FD62 /* Specs */,
 				8A76E28216B0969900E5DBC4 /* Frameworks */,
 				8A76E28016B0969900E5DBC4 /* Products */,
 				D1A86D66BEC54D4DAA18CD79 /* Pods.xcconfig */,
@@ -139,9 +147,9 @@
 			isa = PBXGroup;
 			children = (
 				8ACBA252170B28FE0018FD62 /* SenTestingKit.framework */,
-				8A76E28516B0969900E5DBC4 /* Other Frameworks */,
 				8A3CE503170B245C00BEC7D0 /* Cocoa.framework */,
 				8A76E2A316B09B9000E5DBC4 /* WebKit.framework */,
+				8A76E28516B0969900E5DBC4 /* Other Frameworks */,
 				B1CA24A74C1941C2BE218EC4 /* libPods.a */,
 				8A76E2B916B1075300E5DBC4 /* libsqlite3.0.dylib */,
 				C8C66B357CBA4A0BBB2632E7 /* libPods-ClamShellTests.a */,
@@ -166,6 +174,8 @@
 				8A6302C116B3A20300202329 /* DMMAppDelegate.m */,
 				8A6302C216B3A20300202329 /* DMMWindowController.h */,
 				8A6302C316B3A20300202329 /* DMMWindowController.m */,
+				8A1D7C97170E13CE00A2C548 /* DMMConstants.h */,
+				8A1D7C98170E13CE00A2C548 /* DMMConstants.m */,
 				8A9256BA16B3425700A85653 /* Views */,
 				8A9256AD16B2FDB500A85653 /* Assets */,
 				8A9256A216B2CF9500A85653 /* Models */,
@@ -236,12 +246,15 @@
 			path = ..;
 			sourceTree = "<group>";
 		};
-		8ACBA256170B28FE0018FD62 /* ClamShellTests */ = {
+		8ACBA256170B28FE0018FD62 /* Specs */ = {
 			isa = PBXGroup;
 			children = (
-				8ADD2E8B170B32BC00347F96 /* DMMSampleSpec.m */,
+				8ADD2E8E170B5DD200347F96 /* DMMTokenStoreSpec.m */,
+				8ADD2E8B170B32BC00347F96 /* DMMSearchResultSpec.m */,
+				8ADD2E91170B620600347F96 /* DMMURLParserSpec.m */,
 				8ACBA257170B28FE0018FD62 /* Supporting Files */,
 			);
+			name = Specs;
 			path = ClamShellTests;
 			sourceTree = "<group>";
 		};
@@ -406,6 +419,7 @@
 				8A6302CD16B3A21E00202329 /* DMMSearchResult.m in Sources */,
 				8A6302CE16B3A21E00202329 /* DMMTokenStore.m in Sources */,
 				8A6302D416B3A24C00202329 /* DMMPopover.m in Sources */,
+				8A1D7C99170E13CE00A2C548 /* DMMConstants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,7 +427,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8ADD2E8C170B32BC00347F96 /* DMMSampleSpec.m in Sources */,
+				8ADD2E8C170B32BC00347F96 /* DMMSearchResultSpec.m in Sources */,
+				8ADD2E8F170B5DD200347F96 /* DMMTokenStoreSpec.m in Sources */,
+				8ADD2E92170B620600347F96 /* DMMURLParserSpec.m in Sources */,
+				8A1D7C9A170E13CE00A2C548 /* DMMConstants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -565,6 +582,10 @@
 				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ClamShellTests/ClamShellTests-Prefix.pch";
+				"GCC_PREPROCESSOR_DEFINITIONS[sdk=macosx*]" = (
+					"TESTING=1",
+					"$(inherited)",
+				);
 				INFOPLIST_FILE = "ClamShellTests/ClamShellTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
