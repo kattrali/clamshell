@@ -27,13 +27,13 @@
 
   if (![self hasDataStoreFile]) return @[];
   NSString *query = @"SELECT name,type,path FROM searchIndex WHERE name LIKE :text ORDER BY name LIMIT :max COLLATE NOCASE";
-  NSDictionary *params = @{@"text" : [NSString stringWithFormat:@"%@%%", text], @"max" : @20 };
+  NSDictionary *params = @{@"text" : [NSString stringWithFormat:@"%@%%", text], @"max" : @(MaxSearchResults) };
 
   NSArray *results = [self runQuery:query withParameters:params];
 
   // Make a second pass with a slower query if no results are found
   if (results.count == 0) {
-    params = @{@"text" : [NSString stringWithFormat:@"%%%@%%", text], @"max" : @20 };
+    params = @{@"text" : [NSString stringWithFormat:@"%%%@%%", text], @"max" : @(MaxSearchResults) };
     results = [self runQuery:query withParameters:params];
   }
   return results;
@@ -41,7 +41,7 @@
 
 + (NSArray *) runQuery:(NSString *) query withParameters:(NSDictionary *) params
 {
-  NSMutableArray *results = [NSMutableArray arrayWithCapacity:20];
+  NSMutableArray *results = [NSMutableArray arrayWithCapacity:MaxSearchResults];
   FMDatabase *db = [FMDatabase databaseWithPath:[self databasePath]];
   db.logsErrors = YES;
   //  db.traceExecution = YES;

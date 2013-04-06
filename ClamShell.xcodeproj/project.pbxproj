@@ -40,8 +40,8 @@
 
 /* Begin PBXFileReference section */
 		049558A447604621BFFB55EC /* Pods-ClamShellTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClamShellTests.xcconfig"; path = "Pods/Pods-ClamShellTests.xcconfig"; sourceTree = SOURCE_ROOT; };
-		8A1D7C97170E13CE00A2C548 /* DMMConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMMConstants.h; sourceTree = "<group>"; };
-		8A1D7C98170E13CE00A2C548 /* DMMConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMMConstants.m; sourceTree = "<group>"; };
+		8A1D7C97170E13CE00A2C548 /* DMMConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DMMConstants.h; path = ClamShell/DMMConstants.h; sourceTree = "<group>"; };
+		8A1D7C98170E13CE00A2C548 /* DMMConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DMMConstants.m; path = ClamShell/DMMConstants.m; sourceTree = "<group>"; };
 		8A3CE503170B245C00BEC7D0 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		8A4963A916B39E6C00FB2273 /* DMMURLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DMMURLParser.h; path = Vendor/DMMURLParser/DMMURLParser.h; sourceTree = "<group>"; };
 		8A4963AA16B39E6C00FB2273 /* DMMURLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DMMURLParser.m; path = Vendor/DMMURLParser/DMMURLParser.m; sourceTree = "<group>"; };
@@ -124,7 +124,6 @@
 			isa = PBXGroup;
 			children = (
 				8A01C77616B397A70093AE41 /* Documentation */,
-				8A76E2A816B1073000E5DBC4 /* Vendor */,
 				8A76E28916B0969900E5DBC4 /* ClamShell */,
 				8ACBA256170B28FE0018FD62 /* Specs */,
 				8A76E28216B0969900E5DBC4 /* Frameworks */,
@@ -174,8 +173,7 @@
 				8A6302C116B3A20300202329 /* DMMAppDelegate.m */,
 				8A6302C216B3A20300202329 /* DMMWindowController.h */,
 				8A6302C316B3A20300202329 /* DMMWindowController.m */,
-				8A1D7C97170E13CE00A2C548 /* DMMConstants.h */,
-				8A1D7C98170E13CE00A2C548 /* DMMConstants.m */,
+				8A76E2A816B1073000E5DBC4 /* Helpers */,
 				8A9256BA16B3425700A85653 /* Views */,
 				8A9256AD16B2FDB500A85653 /* Assets */,
 				8A9256A216B2CF9500A85653 /* Models */,
@@ -196,21 +194,16 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		8A76E2A816B1073000E5DBC4 /* Vendor */ = {
+		8A76E2A816B1073000E5DBC4 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				8A76E30D16B206E800E5DBC4 /* DMMURLParser */,
-			);
-			name = Vendor;
-			sourceTree = "<group>";
-		};
-		8A76E30D16B206E800E5DBC4 /* DMMURLParser */ = {
-			isa = PBXGroup;
-			children = (
-				8A4963A916B39E6C00FB2273 /* DMMURLParser.h */,
 				8A4963AA16B39E6C00FB2273 /* DMMURLParser.m */,
+				8A4963A916B39E6C00FB2273 /* DMMURLParser.h */,
+				8A1D7C97170E13CE00A2C548 /* DMMConstants.h */,
+				8A1D7C98170E13CE00A2C548 /* DMMConstants.m */,
 			);
-			name = DMMURLParser;
+			name = Helpers;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		8A9256A216B2CF9500A85653 /* Models */ = {
@@ -537,6 +530,10 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ClamShell/Supporting Files/ClamShell-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
 				INFOPLIST_FILE = "ClamShell/Supporting Files/ClamShell-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -580,12 +577,11 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ClamShellTests/ClamShellTests-Prefix.pch";
-				"GCC_PREPROCESSOR_DEFINITIONS[sdk=macosx*]" = (
-					"TESTING=1",
-					"$(inherited)",
-				);
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = "";
 				INFOPLIST_FILE = "ClamShellTests/ClamShellTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
@@ -603,8 +599,10 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ClamShellTests/ClamShellTests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = "";
 				INFOPLIST_FILE = "ClamShellTests/ClamShellTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";

@@ -8,11 +8,13 @@
 
 #import "DMMConstants.h"
 
-#ifdef TESTING
+#if TESTING
 NSString *PackageFolderName = @"ClamShellTesting";
 #else
 NSString *PackageFolderName = @"ClamShell";
 #endif
+
+int MaxSearchResults        = 20;
 
 @implementation DMMConstants
 @end

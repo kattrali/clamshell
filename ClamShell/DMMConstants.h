@@ -7,6 +7,7 @@
 //
 
 extern NSString *PackageFolderName;
+extern int MaxSearchResults;
 
 @interface DMMConstants : NSObject
 @end
