@@ -14,23 +14,27 @@
 {
   self = [super init];
   if (self != nil) {
-    NSArray *components = [[url absoluteString] componentsSeparatedByString:@"//"];
+    NSArray *components = [[url absoluteString] componentsSeparatedByString:@"?"];
     if (components.count < 2) {
-      self.variables = @{};
-    } else {
+      components = [[url absoluteString] componentsSeparatedByString:@"//"];
+    }
+
+    if (components.count >= 2) {
       NSString *query = components[1];
       NSArray *queryPairs = [query componentsSeparatedByString:@"&"];
       NSMutableDictionary *pairs = [NSMutableDictionary dictionary];
-      for (NSString *queryPair in queryPairs) {
+      [queryPairs each:^(NSString *queryPair) {
         NSArray *bits = [queryPair componentsSeparatedByString:@"="];
-        if ([bits count] != 2) { continue; }
+        if ([bits count] == 2) {
+          NSString *key = [[bits objectAtIndex:0] stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+          NSString *value = [[bits objectAtIndex:1] stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
 
-        NSString *key = [[bits objectAtIndex:0] stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-        NSString *value = [[bits objectAtIndex:1] stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-
-        [pairs setObject:value forKey:key];
-        self.variables = pairs;
-      }
+          [pairs setObject:value forKey:key];
+          self.variables = pairs;
+        }
+      }];
+    } else {
+      self.variables = @{};
     }
   }
   return self;
