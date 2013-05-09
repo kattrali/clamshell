@@ -9,6 +9,7 @@
 #import "DMMWindowController.h"
 #import "DMMTokenStore.h"
 #import "DMMAppDelegate.h"
+#import "DMMSearchResult.h"
 
 @implementation DMMWindowController
 

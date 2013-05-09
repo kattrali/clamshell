@@ -538,7 +538,6 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
-					"\"$(SRCROOT)/Vendor/FMDB\"",
 				);
 				PRODUCT_NAME = ClamShell;
 				WRAPPER_EXTENSION = app;
@@ -560,7 +559,6 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
-					"\"$(SRCROOT)/Vendor/FMDB\"",
 				);
 				PRODUCT_NAME = ClamShell;
 				WRAPPER_EXTENSION = app;
