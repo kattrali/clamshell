@@ -10,8 +10,6 @@
 #import "DMMWindowController.h"
 #import "DMMURLParser.h"
 
-#define DOCSET_DIR @"DocSet"
-
 @interface DMMAppDelegate()
 
 - (void)handleGetURLEvent:(NSAppleEventDescriptor *)event withReplyEvent:(NSAppleEventDescriptor *)replyEvent;
@@ -40,7 +38,7 @@
   {
     NSFileManager *manager = [NSFileManager defaultManager];
     NSURL *fileURL = [openDlg URL];
-    NSURL *target  = [self docSetDirectory];
+    NSURL *target  = [DMMTokenStore docSetDirectory];
 
     NSError *error;
     if ([manager fileExistsAtPath:[fileURL path]]) {
@@ -54,11 +52,6 @@
       }
     }
   }
-}
-
-- (NSURL *) docSetDirectory
-{
-  return [[self applicationFilesDirectory] URLByAppendingPathComponent:DOCSET_DIR];
 }
 
 // Returns the directory the application uses to store the Core Data store file. This code uses a directory named "ClamShell" in the user's Application Support directory.

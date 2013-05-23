@@ -13,4 +13,5 @@
 + (NSArray *) tokensWithText:(NSString *) text;
 + (BOOL) hasDataStoreFile;
 + (NSString *) databasePath;
++ (NSURL *) docSetDirectory;
 @end

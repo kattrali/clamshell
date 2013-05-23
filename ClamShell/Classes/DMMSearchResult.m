@@ -7,6 +7,7 @@
 //
 
 #import "DMMSearchResult.h"
+#import "DMMTokenStore.h"
 #import "DMMAppDelegate.h"
 
 @interface DMMSearchResult ()
@@ -24,7 +25,7 @@
     self.name = name;
     self.type = type;
 
-    NSURL *root = [((DMMAppDelegate *)[[NSApplication sharedApplication] delegate]) docSetDirectory];
+    NSURL *root = [DMMTokenStore docSetDirectory];
     NSString *itemPath = [NSString stringWithFormat:@"Contents/Resources/Documents/%@", path];
     self.path = [NSURL URLWithString:itemPath relativeToURL:root];
 

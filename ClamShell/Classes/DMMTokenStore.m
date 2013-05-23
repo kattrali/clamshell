@@ -10,12 +10,19 @@
 #import "DMMAppDelegate.h"
 #import "FMDatabase.h"
 
+static NSString *DOCSET_DIR = @"DocSet";
+
 @implementation DMMTokenStore
 
 + (NSString *) databasePath
 {
-  NSString *dir = [[((DMMAppDelegate *)[[NSApplication sharedApplication] delegate]) docSetDirectory] path];
-  return [dir stringByAppendingPathComponent:@"Contents/Resources/docSet.dsidx"];
+  return [[[self docSetDirectory] path] stringByAppendingPathComponent:@"Contents/Resources/docSet.dsidx"];
+}
+
++ (NSURL *) docSetDirectory
+{
+    DMMAppDelegate *delegate = (DMMAppDelegate *)[[NSApplication sharedApplication] delegate];
+    return [[delegate applicationFilesDirectory] URLByAppendingPathComponent:DOCSET_DIR];
 }
 
 + (BOOL) hasDataStoreFile

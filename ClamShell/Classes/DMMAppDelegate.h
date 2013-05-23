@@ -11,13 +11,13 @@
 
 @property (assign) IBOutlet NSWindow *window;
 @property (assign) IBOutlet DMMWindowController *mainController;
+@property (weak) IBOutlet DMMPopover *popover;
 
 @property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 @property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
 @property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 
 - (IBAction)closePopoverHandler:(id)sender;
-@property (weak) IBOutlet DMMPopover *popover;
-- (NSURL *) docSetDirectory;
+
 - (NSURL *) applicationFilesDirectory;
 @end
